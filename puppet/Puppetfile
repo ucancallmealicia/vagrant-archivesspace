@@ -1,0 +1,35 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+forge "https://forgeapi.puppetlabs.com"
+
+# Local modules
+mod 'flannon/fw', :path => "./modules-local/fw"
+mod 'flannon/motd', :path => './modules-local/motd'
+#mod 'flannon/vim', :path => "./modules-local/vim"
+
+# Modules from the Puppet Forge
+mod 'stahnma/epel', "1.1.1"
+mod 'puppetlabs/java'
+mod 'puppetlabs/mysql'
+mod 'example42/puppi'
+mod 'stankevich/python'
+mod 'maestrodev/rvm'
+mod 'puppetlabs/stdlib', "4.9.0"
+#mod 'aco/yum_autoupdate', "0.6.2"
+
+
+# Modules from github
+mod 'flannon/archivesspace',
+    :git => 'git://github.com/flannon/puppet-archivesspace.git'
+
+#mod 'puppet-community/mysql_java_connector',
+#    :git => 'git://github.com/puppet-community/puppet-mysql_java_connector.git'
+    
+mod 'puppetlabs/firewall',
+    :git => 'git://github.com/puppetlabs/puppetlabs-firewall.git',
+    :ref => '1.7.1'
+
+mod 'yguenane/repoforge', 
+     :git => "https://github.com/Mylezeem/puppet-repoforge.git",
+     :ref => "0.2.1"

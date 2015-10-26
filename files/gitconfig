@@ -1,0 +1,10 @@
+[hub]
+  protocol = https
+
+[user]
+  name = Ichabod Crane
+  email = icrane@sleppyhollow.net
+
+[credential]
+	helper = !aws --profile default codecommit credential-helper $@
+	UseHttpPath = true

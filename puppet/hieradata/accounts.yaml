@@ -1,0 +1,21 @@
+---
+accounts_message: 'Reading from accounts.yaml file!'
+
+accounts::ssh_keys:
+  foo:
+    comment: GECOS-field
+    type: ssh-rsa
+    public: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+accounts::users:
+  archivesspace:
+    #ensure: absent
+    uid: 3001
+    comment: "Arcivesspace user"
+    gid: 3001
+
+accounts::usergroups:
+
+  as:
+    -archivesspace
+
