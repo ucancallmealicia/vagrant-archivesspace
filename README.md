@@ -1,18 +1,6 @@
 # vagrant-archivesspace
 A vagrant installer for Archivesspace 1.4
 
-This will install Archivesspace 1.4.2 in a Virtualbox VM 
-running Centos 6.7 and mysql.    The passwords for the mysql 
-root and as users have been set to "vagrant".
-
-The archivesspace ports have been mapped in the following way,
-
-frontend   8080 => 127.0.0.1:8180
-public     8081 => 127.0.0.1:8181
-backend    8089 => 127.0.0.1:8189
-solr       8090 => 127.0.0.1:8190
-indexer    8091 => 127.0.0.1:8191
-
 
 # Installation
 
@@ -37,6 +25,29 @@ is pretty simple
 > $ brew cask install virtualbox
 > $ brew cask install vagrant
 
+
+# The gory details
+
+This will install Archivesspace 1.4.2 in a Virtualbox VM 
+running Centos 6.7 and mysql.    The passwords for the mysql 
+root and as users have been set to "vagrant".
+
+The archivesspace ports have been mapped in the following way,
+
+> frontend   8080 => 127.0.0.1:8180
+> public     8081 => 127.0.0.1:8181
+> backend    8089 => 127.0.0.1:8189
+> solr       8090 => 127.0.0.1:8190
+> indexer    8091 => 127.0.0.1:8191
+
+Once the VM is running you can connect to the box by running
+
+> $ vagrant ssh
+
+At this point you will be logged in as the vagrant user, which
+has passwordless sudo access.
+
+Archivesspace is installed in /usr/local/archivesspace
 
 # Note: 
 
