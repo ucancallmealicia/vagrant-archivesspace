@@ -40,5 +40,11 @@ is pretty simple
 
 # Note: 
 
-This project was developed on OS x 10.9 and it hasn't been tested
-on any other operating systems.  If you have any issues with the installer please let me know.
+This project is in the very early stages adn not much testing has
+been done at this point.  It was developed on OS x 10.9 and has not
+been tested on any other operating systems.  
+
+Since vagrant produces a self containbed environment I expect it to
+work fairly consistently, but if you have any issues with the installer 
+please let me know.
+
