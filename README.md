@@ -7,7 +7,9 @@ A vagrant installer for Archivesspace 1.4
 To run the installer do the following,
 
 > $ git clone https://NYULibraries/vagrant-archviesspace
+
 > $ cd vagrant-archivesspace
+
 > $ vagrant up
 
 Once vagrant is finished running it can take a few minutes for 
