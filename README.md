@@ -25,6 +25,7 @@ run the installer.  If you're running OS X and have homebrew isntalled
 is pretty simple
 
 > $ brew cask install virtualbox
+
 > $ brew cask install vagrant
 
 
@@ -37,9 +38,13 @@ root and as users have been set to "vagrant".
 The archivesspace ports have been mapped in the following way,
 
 > frontend   8080 => 127.0.0.1:8180
+
 > public     8081 => 127.0.0.1:8181
+
 > backend    8089 => 127.0.0.1:8189
+
 > solr       8090 => 127.0.0.1:8190
+
 > indexer    8091 => 127.0.0.1:8191
 
 Once the VM is running you can connect to the box by running
