@@ -20,8 +20,9 @@ mod 'puppetlabs/stdlib', "4.9.0"
 
 
 # Modules from github
-mod 'flannon/archivesspace',
-    :git => 'git://github.com/flannon/puppet-archivesspace.git'
+mod 'flannon/archivesspace', :path => "./modules-local/archivesspace"
+#mod 'flannon/archivesspace',
+#    :git => 'git://github.com/flannon/puppet-archivesspace.git'
 
 #mod 'puppet-community/mysql_java_connector',
 #    :git => 'git://github.com/puppet-community/puppet-mysql_java_connector.git'

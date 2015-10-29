@@ -76,18 +76,25 @@ node default {
     password => 'vagrant',
     dbname   => 'asdb',
   }
+  #mysql::bindings {
+  #  java_enable => true,
+  #  ruby_enable => true,
+  #}
   include mysql::client
+  #include mysql::bindings::java
   include mysql::bindings
   include stdlib
 
-  puppi::netinstall { 'netinstall-archivesspace':
-    url                 => 'https://github.com/archivesspace/archivesspace/releases/download/v1.4.1/archivesspace-v1.4.1.zip',
-    extracted_dir       => 'archivesspace',
-    destination_dir     => '/tmp',
-    postextract_command => 'mv -f /tmp/archivesspace /usr/local/archivesspace',
-  }
+  #puppi::netinstall { 'netinstall-archivesspace':
+  #  url                 => 'https://github.com/archivesspace/archivesspace/releases/download/v1.4.1/archivesspace-v1.4.1.zip',
+  #  extracted_dir       => 'archivesspace',
+  #  destination_dir     => '/tmp',
+  #  postextract_command => 'mv -f /tmp/archivesspace /usr/local/archivesspace',
+  #}
   class { 'archivesspace':
-    require  => Puppi::Netinstall['netinstall-archivesspace'],
+    version    => '1.4.2',
+    #  require => Puppi::Netinstall['netinstall-archivesspace'],
+    #creates   => '/usr/local/archivesspace/archivesspace',
   }
   firewall { '100 allow archivesspace access':
     port   => [8080, 8081, 8089, 8090, 8091],

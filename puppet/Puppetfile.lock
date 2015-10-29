@@ -19,14 +19,6 @@ FORGE
       stahnma-epel (< 2.0.0, >= 1.0.1)
 
 GIT
-  remote: git://github.com/flannon/puppet-archivesspace.git
-  ref: master
-  sha: 3936cec061becb751a8120b1435bdfb0bb7e1a39
-  specs:
-    flannon-archivesspace (0.1.0)
-      puppetlabs-stdlib (>= 1.0.0)
-
-GIT
   remote: git://github.com/puppetlabs/puppetlabs-firewall.git
   ref: 1.7.1
   sha: c9a79d5c8ef5e6af35eb7feaa6cecf8b530424ba
@@ -39,6 +31,12 @@ GIT
   sha: 25a7f2234d451884b0ce128403ced82879cf7f9c
   specs:
     yguenane-repoforge (0.0.1)
+
+PATH
+  remote: ./modules-local/archivesspace
+  specs:
+    flannon-archivesspace (0.1.0)
+      puppetlabs-stdlib (>= 1.0.0)
 
 PATH
   remote: ./modules-local/fw
