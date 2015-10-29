@@ -13,16 +13,16 @@ To run the installer do the following,
 > $ vagrant up
 
 Once vagrant is finished running it can take a few minutes for 
-Archivesspace to initially start up.   Once it's running you 
-can point your browser at http://127.0.0.1:8180 to get to the
-frontend.
+Archivesspace to initially start up.  Point you're browser at
+http://127.0.0.1:8180 and shen archivesspace has completed its 
+startup process you connect to th frontend.
 
 
 # Dependencies
 
-You'll need virtualbox and vagrant installed locally in order to 
-run the installer.  If you're running OS X and have homebrew isntalled 
-is pretty simple
+To run the installer you'll need virtualbox and vagrant installed. 
+If you're running OS X and have homebrew installed it's pretty simple,
+
 
 > $ brew cask install virtualbox
 
@@ -33,7 +33,7 @@ is pretty simple
 
 This will install Archivesspace 1.4.2 in a Virtualbox VM 
 running Centos 6.7 and mysql.    The passwords for the mysql 
-root and as users have been set to "vagrant".
+_root_ and _as_ users have been set to "vagrant".
 
 The archivesspace ports have been mapped in the following way,
 
