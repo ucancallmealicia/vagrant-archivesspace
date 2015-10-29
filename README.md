@@ -32,8 +32,8 @@ If you're running OS X and have homebrew installed it's pretty simple,
 # The gory details
 
 This will install Archivesspace 1.4.2 in a Virtualbox VM 
-running Centos 6.7 and mysql.    The passwords for the mysql 
-_root_ and _as_ users have been set to "vagrant".
+running Centos 6.7 and mysql.  The passwords for the mysql 
+"root" and "as" users have been set to "vagrant".
 
 The archivesspace ports have been mapped in the following way,
 
