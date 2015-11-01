@@ -13,3 +13,5 @@ alias ssh="ssh -o VisualHostKey=yes"
 alias vi='vim'
 
 set -o vi
+
+#rvm use 1.9.3-p551@

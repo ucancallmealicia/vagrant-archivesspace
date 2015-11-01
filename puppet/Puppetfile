@@ -6,6 +6,8 @@ forge "https://forgeapi.puppetlabs.com"
 # Local modules
 mod 'flannon/fw', :path => "./modules-local/fw"
 mod 'flannon/motd', :path => './modules-local/motd'
+mod 'flannon/housekeeping', :path => './modules-local/housekeeping'
+mod 'flannon/vim', :path => './modules-local/vim'
 #mod 'flannon/vim', :path => "./modules-local/vim"
 
 # Modules from the Puppet Forge

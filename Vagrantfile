@@ -19,7 +19,7 @@ Vagrant.configure(2) do |config|
   config.vm.network "forwarded_port", guest:  8091, host: 8191
   config.vm.hostname = "archivesspace.local"
   config.vm.provision "shell", path: "bin/init-puppet-centos6.sh"
-  config.vm.provision "shell", path: "bin/init-libs.sh"
+  #config.vm.provision "shell", path: "bin/init-libs.sh"
   config.vm.provision "shell", path: "bin/load-mpapis-sig.sh"
 
   config.librarian_puppet.puppetfile_dir = "puppet"
@@ -36,6 +36,7 @@ Vagrant.configure(2) do |config|
       puppet.working_directory = "/tmp/vagrant-puppet"
       #puppet.manifest_file = "hiera.pp"
       #puppet.manifest_file = "init-firewall.pp"
+      #puppet.manifest_file = "housekeeping.pp"
       puppet.manifest_file = "default.pp"
       #puppet.manifest_file = "archivesspace.pp"
       #puppet.manifest_file = "vim.pp"

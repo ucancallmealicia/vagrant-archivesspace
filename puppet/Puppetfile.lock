@@ -30,29 +30,46 @@ GIT
   ref: 0.2.1
   sha: 25a7f2234d451884b0ce128403ced82879cf7f9c
   specs:
-    yguenane-repoforge (0.0.1)
+    yguenane-repoforge (0.2.0)
+      puppetlabs-stdlib (>= 3.2.0)
 
 PATH
   remote: ./modules-local/archivesspace
   specs:
     flannon-archivesspace (0.1.0)
+      example42-puppi (>= 2.1.12)
       puppetlabs-stdlib (>= 1.0.0)
 
 PATH
   remote: ./modules-local/fw
   specs:
-    flannon-fw (0.0.1)
+    flannon-fw (0.1.1)
+      puppetlabs-stdlib (>= 1.0.0)
+
+PATH
+  remote: ./modules-local/housekeeping
+  specs:
+    flannon-housekeeping (0.1.0)
+      puppetlabs-stdlib (>= 1.0.0)
 
 PATH
   remote: ./modules-local/motd
   specs:
-    flannon-motd (0.0.1)
+    flannon-motd (0.1.2)
+      puppetlabs-stdlib (>= 1.0.0)
+
+PATH
+  remote: ./modules-local/vim
+  specs:
+    flannon-vim (2.1.0)
 
 DEPENDENCIES
   example42-puppi (>= 0)
   flannon-archivesspace (>= 0)
   flannon-fw (>= 0)
+  flannon-housekeeping (>= 0)
   flannon-motd (>= 0)
+  flannon-vim (>= 0)
   maestrodev-rvm (>= 0)
   puppetlabs-firewall (>= 0)
   puppetlabs-java (>= 0)

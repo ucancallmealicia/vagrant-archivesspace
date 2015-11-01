@@ -8,6 +8,7 @@ node default {
   }
 
   include epel
+  include housekeeping
   class { ['fw::pre', 'fw::post']: }
   class { 'firewall': }
   #include '::gnupg'
@@ -68,6 +69,7 @@ node default {
     root_password           => 'vagrant',
     remove_default_accounts => true,
     service_enabled         => true,
+    require                 => Class['housekeeping'],
   }
   mysql::db { 'asdb':
     ensure   => 'present',
@@ -93,6 +95,8 @@ node default {
   #}
   class { 'archivesspace':
     version    => '1.4.2',
+    #require    => Class['housekeeping'],
+    require    => Package['unzip'],
     #  require => Puppi::Netinstall['netinstall-archivesspace'],
     #creates   => '/usr/local/archivesspace/archivesspace',
   }
@@ -101,5 +105,7 @@ node default {
     proto  => tcp,
     action => accept,
   }
-  #include vim
+  
+  include vim
+  
 }
