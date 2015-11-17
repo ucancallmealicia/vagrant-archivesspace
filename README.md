@@ -4,7 +4,13 @@ A vagrant installer for Archivesspace 1.4
 
 # Installation
 
-To run the installer do the following,
+The installation uses librarian puppet to load puppet modules
+at build time.  You'll need ot the vagrant plugin for librarian-puppet,
+so before you begin run the following,
+
+> vagrant plugin install vagrant-librarian-puppet
+ 
+Then you can proceed with,
 
 > $ git clone https://NYULibraries/vagrant-archviesspace
 
