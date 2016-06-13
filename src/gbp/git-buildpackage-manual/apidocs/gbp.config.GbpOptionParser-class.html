@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>gbp.config.GbpOptionParser</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="gbp-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >git-buildpackage</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="gbp-module.html">Package&nbsp;gbp</a> ::
+        <a href="gbp.config-module.html">Module&nbsp;config</a> ::
+        Class&nbsp;GbpOptionParser
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="gbp.config.GbpOptionParser-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class GbpOptionParser</h1><p class="nomargin-top"></p>
+<pre class="base-tree">
+optparse.OptionContainer --+    
+                           |    
+       optparse.OptionParser --+
+                               |
+                              <strong class="uidshort">GbpOptionParser</strong>
+</pre>
+
+<dl><dt>Known Subclasses:</dt>
+<dd>
+      <ul class="subclass-list">
+<li><a href="gbp.config.GbpOptionParserDebian-class.html">GbpOptionParserDebian</a></li><li>, <a href="gbp.config.GbpOptionParserRpm-class.html">GbpOptionParserRpm</a></li>  </ul>
+</dd></dl>
+
+<hr />
+<p>Handles commandline options and parsing of config files</p>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="_read_config_file"></a><span class="summary-sig-name">_read_config_file</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">parser</span>,
+        <span class="summary-sig-arg">repo</span>,
+        <span class="summary-sig-arg">filename</span>,
+        <span class="summary-sig-arg">git_treeish</span>)</span><br />
+      Read config file</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="parse_config_files"></a><span class="summary-sig-name">parse_config_files</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">git_treeish</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Parse the possible config files and set appropriate values default 
+      values</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.config.GbpOptionParser-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">command</span>,
+        <span class="summary-sig-arg">prefix</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string"></code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">usage</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">sections</span>=<span class="summary-sig-default"><code class="variable-group">[</code><code class="variable-group">]</code></span>,
+        <span class="summary-sig-arg">git_treeish</span>=<span class="summary-sig-default">None</span>)</span></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="_is_boolean"></a><span class="summary-sig-name">_is_boolean</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">dummy</span>,
+        <span class="summary-sig-arg">*unused</span>,
+        <span class="summary-sig-arg">**kwargs</span>)</span><br />
+      is option_name a boolean option</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="_get_bool_default"></a><span class="summary-sig-name">_get_bool_default</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">option_name</span>)</span><br />
+      get default for boolean options this way we can handle no-foo=True 
+      and foo=False</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="get_default"></a><span class="summary-sig-name">get_default</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">option_name</span>,
+        <span class="summary-sig-arg">**kwargs</span>)</span><br />
+      get the default value</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.config.GbpOptionParser-class.html#add_config_file_option" class="summary-sig-name">add_config_file_option</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">*args</span>,
+        <span class="summary-sig-arg">**kwargs</span>)</span><br />
+      set a option for the command line parser, the default is read from 
+      the config file param option_name: name of the option type 
+      option_name: string param help: help text type help: string</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="add_boolean_config_file_option"></a><span class="summary-sig-name">add_boolean_config_file_option</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">option_name</span>,
+        <span class="summary-sig-arg">dest</span>=<span class="summary-sig-default">None</span>)</span></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>str</code> or <code>None</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.config.GbpOptionParser-class.html#get_config_file_value" class="summary-sig-name">get_config_file_value</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">option_name</span>)</span><br />
+      Query a single interpolated config file value.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>optparse.OptionParser</code></b>:
+      <code>add_option_group</code>,
+      <code>check_values</code>,
+      <code>destroy</code>,
+      <code>disable_interspersed_args</code>,
+      <code>enable_interspersed_args</code>,
+      <code>error</code>,
+      <code>exit</code>,
+      <code>expand_prog_name</code>,
+      <code>format_epilog</code>,
+      <code>format_help</code>,
+      <code>format_option_help</code>,
+      <code>get_default_values</code>,
+      <code>get_description</code>,
+      <code>get_option_group</code>,
+      <code>get_prog_name</code>,
+      <code>get_usage</code>,
+      <code>get_version</code>,
+      <code>parse_args</code>,
+      <code>print_help</code>,
+      <code>print_usage</code>,
+      <code>print_version</code>,
+      <code>set_default</code>,
+      <code>set_defaults</code>,
+      <code>set_process_default_values</code>,
+      <code>set_usage</code>
+      </p>
+    <div class="private">    <p class="indent-wrapped-lines"><b>Inherited from <code>optparse.OptionParser</code></b> (private):
+      <code>_add_help_option</code>,
+      <code>_add_version_option</code>,
+      <code>_create_option_list</code>,
+      <code>_get_all_options</code>,
+      <code>_get_args</code>,
+      <code>_get_encoding</code>,
+      <code>_init_parsing_state</code>,
+      <code>_match_long_opt</code>,
+      <code>_populate_option_list</code>,
+      <code>_process_args</code>,
+      <code>_process_long_opt</code>,
+      <code>_process_short_opts</code>
+      </p></div>
+    <p class="indent-wrapped-lines"><b>Inherited from <code>optparse.OptionContainer</code></b>:
+      <code>add_option</code>,
+      <code>add_options</code>,
+      <code>format_description</code>,
+      <code>get_option</code>,
+      <code>has_option</code>,
+      <code>remove_option</code>,
+      <code>set_conflict_handler</code>,
+      <code>set_description</code>
+      </p>
+    <div class="private">    <p class="indent-wrapped-lines"><b>Inherited from <code>optparse.OptionContainer</code></b> (private):
+      <code>_check_conflict</code>,
+      <code>_create_option_mappings</code>,
+      <code>_share_option_mappings</code>
+      </p></div>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS METHODS ==================== -->
+<a name="section-ClassMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Class Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-ClassMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>list</code>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>conf_backup = os.getenv(<span class="py-string">'GBP_CONF_FILES'</span>)
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">if</span> conf_backup <span class="py-keyword">is</span> <span class="py-keyword">not</span> None: <span class="py-keyword">del</span> os.environ[<span class="py-string">'GBP_CONF_FILES'</span>]
+<span class="py-prompt">&gt;&gt;&gt; </span>homedir = os.path.expanduser(<span class="py-string">&quot;~&quot;</span>)
+<span class="py-prompt">&gt;&gt;&gt; </span>files = GbpOptionParser.get_config_files()
+<span class="py-prompt">&gt;&gt;&gt; </span>files_mangled = [file.replace(homedir, <span class="py-string">'HOME'</span>) <span class="py-keyword">for</span> file <span class="py-keyword">in</span> files]
+<span class="py-prompt">&gt;&gt;&gt; </span>files_mangled
+<span class="py-output">['/etc/git-buildpackage/gbp.conf', 'HOME/.gbp.conf', '%(top_dir)s/.gbp.conf', '%(top_dir)s/debian/gbp.conf', '%(git_dir)s/gbp.conf']</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>files = GbpOptionParser.get_config_files(no_local=True)
+<span class="py-prompt">&gt;&gt;&gt; </span>files_mangled = [file.replace(homedir, <span class="py-string">'HOME'</span>) <span class="py-keyword">for</span> file <span class="py-keyword">in</span> files]
+<span class="py-prompt">&gt;&gt;&gt; </span>files_mangled
+<span class="py-output">['/etc/git-buildpackage/gbp.conf', 'HOME/.gbp.conf']</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>os.environ[<span class="py-string">'GBP_CONF_FILES'</span>] = <span class="py-string">'test1:test2'</span>
+<span class="py-prompt">&gt;&gt;&gt; </span>GbpOptionParser.get_config_files()
+<span class="py-output">['test1', 'test2']</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">del</span> os.environ[<span class="py-string">'GBP_CONF_FILES'</span>]
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">if</span> conf_backup <span class="py-keyword">is</span> <span class="py-keyword">not</span> None: os.environ[<span class="py-string">'GBP_CONF_FILES'</span>] = conf_backup</pre></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.config.GbpOptionParser-class.html#get_config_files" class="summary-sig-name">get_config_files</a>(<span class="summary-sig-arg">klass</span>,
+        <span class="summary-sig-arg">no_local</span>=<span class="summary-sig-default">False</span>)</span><br />
+      Get list of config files from the <i>GBP_CONF_FILES</i> environment 
+      variable.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS VARIABLES ==================== -->
+<a name="section-ClassVariables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Class Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-ClassVariables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">dict</span>
+    </td><td class="summary">
+        <a href="gbp.config.GbpOptionParser-class.html#defaults" class="summary-name">defaults</a> = <code title="{'allow-unauthenticated': 'False',
+ 'arch': '',
+ 'author-date-is-committer-date': 'False',
+ 'author-is-committer': 'False',
+ 'build': 'True',
+ 'color': 'auto',
+ 'color-scheme': '',
+ 'commit-msg': 'Update changelog for %(version)s release',
+..."><code class="variable-group">{</code><code class="variable-quote">'</code><code class="variable-string">allow-unauthenticated</code><code class="variable-quote">'</code><code class="variable-op">: </code><code class="variable-quote">'</code><code class="variable-string">False</code><code class="variable-quote">'</code><code class="variable-op">, </code><code class="variable-quote">'</code><code class="variable-string">arch</code><code class="variable-quote">'</code><code class="variable-op">: </code><code class="variable-quote">'</code><code class="variable-string"></code><code class="variable-quote">'</code><code class="variable-op">, </code><code class="variable-quote">'</code><code class="variable-string">aut</code><code class="variable-ellipsis">...</code></code><br />
+      defaults value of an option if not in the config file or given on the
+      command line
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">dict</span>
+    </td><td class="summary">
+        <a href="gbp.config.GbpOptionParser-class.html#help" class="summary-name">help</a> = <code title="{'allow-unauthenticated': 'Don\'t verify integrity of downloaded sourc\
+e, default is \'%(allow-unauthenticated)s\'',
+ 'arch': 'Build for this architecture when using git-pbuilder, default\
+ is \'%(arch)s\'',
+ 'author-date-is-committer-date': 'Use the authors\'s date as the comm\
+itter\'s date, default is \'%(author-date-is-committer-date)s\'',
+ 'author-is-committer': 'Use the authors\'s name also as the committer\
+\'s name, default is \'%(author-is-committer)s\'',
+..."><code class="variable-group">{</code><code class="variable-quote">'</code><code class="variable-string">allow-unauthenticated</code><code class="variable-quote">'</code><code class="variable-op">: </code><code class="variable-quote">'</code><code class="variable-string">Don\'t verify integrity of d</code><code class="variable-ellipsis">...</code></code><br />
+      help messages
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">list</span>
+    </td><td class="summary">
+        <a href="gbp.config.GbpOptionParser-class.html#def_config_files" class="summary-name">def_config_files</a> = <code title="['/etc/git-buildpackage/gbp.conf',
+ '~/.gbp.conf',
+ '%(top_dir)s/.gbp.conf',
+ '%(top_dir)s/debian/gbp.conf',
+ '%(git_dir)s/gbp.conf']"><code class="variable-group">[</code><code class="variable-quote">'</code><code class="variable-string">/etc/git-buildpackage/gbp.conf</code><code class="variable-quote">'</code><code class="variable-op">, </code><code class="variable-quote">'</code><code class="variable-string">~/.gbp.</code><code class="variable-ellipsis">...</code></code><br />
+      list of default config files we parse
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>optparse.OptionParser</code></b>:
+      <code>standard_option_list</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== INSTANCE VARIABLES ==================== -->
+<a name="section-InstanceVariables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceVariables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">string</span>
+    </td><td class="summary">
+        <a name="command"></a><span class="summary-name">command</span><br />
+      the gbp command we store the options for
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">dict</span>
+    </td><td class="summary">
+        <a name="config"></a><span class="summary-name">config</span><br />
+      current configuration parameters
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">string</span>
+    </td><td class="summary">
+        <a name="prefix"></a><span class="summary-name">prefix</span><br />
+      prefix to prepend to all commandline options
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Method Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-MethodDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="get_config_files"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_config_files</span>(<span class="sig-arg">klass</span>,
+        <span class="sig-arg">no_local</span>=<span class="sig-default">False</span>)</span>
+    <br /><em class="fname">Class Method</em>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get list of config files from the <i>GBP_CONF_FILES</i> environment 
+  variable.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>no_local</code></strong> (<code>str</code>) - don't return the per-repo configuration files</li>
+    </ul></dd>
+    <dt>Returns: <code>list</code>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>conf_backup = os.getenv(<span class="py-string">'GBP_CONF_FILES'</span>)
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">if</span> conf_backup <span class="py-keyword">is</span> <span class="py-keyword">not</span> None: <span class="py-keyword">del</span> os.environ[<span class="py-string">'GBP_CONF_FILES'</span>]
+<span class="py-prompt">&gt;&gt;&gt; </span>homedir = os.path.expanduser(<span class="py-string">&quot;~&quot;</span>)
+<span class="py-prompt">&gt;&gt;&gt; </span>files = GbpOptionParser.get_config_files()
+<span class="py-prompt">&gt;&gt;&gt; </span>files_mangled = [file.replace(homedir, <span class="py-string">'HOME'</span>) <span class="py-keyword">for</span> file <span class="py-keyword">in</span> files]
+<span class="py-prompt">&gt;&gt;&gt; </span>files_mangled
+<span class="py-output">['/etc/git-buildpackage/gbp.conf', 'HOME/.gbp.conf', '%(top_dir)s/.gbp.conf', '%(top_dir)s/debian/gbp.conf', '%(git_dir)s/gbp.conf']</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>files = GbpOptionParser.get_config_files(no_local=True)
+<span class="py-prompt">&gt;&gt;&gt; </span>files_mangled = [file.replace(homedir, <span class="py-string">'HOME'</span>) <span class="py-keyword">for</span> file <span class="py-keyword">in</span> files]
+<span class="py-prompt">&gt;&gt;&gt; </span>files_mangled
+<span class="py-output">['/etc/git-buildpackage/gbp.conf', 'HOME/.gbp.conf']</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>os.environ[<span class="py-string">'GBP_CONF_FILES'</span>] = <span class="py-string">'test1:test2'</span>
+<span class="py-prompt">&gt;&gt;&gt; </span>GbpOptionParser.get_config_files()
+<span class="py-output">['test1', 'test2']</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">del</span> os.environ[<span class="py-string">'GBP_CONF_FILES'</span>]
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">if</span> conf_backup <span class="py-keyword">is</span> <span class="py-keyword">not</span> None: os.environ[<span class="py-string">'GBP_CONF_FILES'</span>] = conf_backup</pre></dt>
+        <dd>list of config files we need to parse</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="__init__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">command</span>,
+        <span class="sig-arg">prefix</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string"></code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">usage</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">sections</span>=<span class="sig-default"><code class="variable-group">[</code><code class="variable-group">]</code></span>,
+        <span class="sig-arg">git_treeish</span>=<span class="sig-default">None</span>)</span>
+    <br /><em class="fname">(Constructor)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>command</code></strong> (<code>str</code>) - the command to build the config parser for</li>
+        <li><strong class="pname"><code>prefix</code></strong> (<code>str</code>) - A prefix to add to all command line options</li>
+        <li><strong class="pname"><code>usage</code></strong> (<code>str</code>) - a usage description</li>
+        <li><strong class="pname"><code>sections</code></strong> (<code>list</code> of <code>str</code>) - additional (non optional) config file sections to parse</li>
+    </ul></dd>
+    <dt>Overrides:
+        optparse.OptionContainer.__init__
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="add_config_file_option"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">add_config_file_option</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">*args</span>,
+        <span class="sig-arg">**kwargs</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>set a option for the command line parser, the default is read from the
+  config file param option_name: name of the option type option_name: 
+  string param help: help text type help: string</p>
+  <dl class="fields">
+    <dt>Decorators:</dt>
+    <dd><ul class="nomargin-top">
+        <li><code>@safe_option</code></li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_config_file_value"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_config_file_value</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">option_name</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Query a single interpolated config file value.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>option_name</code></strong> (string) - the config file option to look up</li>
+    </ul></dd>
+    <dt>Returns: <code>str</code> or <code>None</code></dt>
+        <dd>The config file option value or <code>None</code> if it doesn't 
+          exist</dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== CLASS VARIABLE DETAILS ==================== -->
+<a name="section-ClassVariableDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Class Variable Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-ClassVariableDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="defaults"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">defaults</h3>
+  defaults value of an option if not in the config file or given on the 
+  command line
+  <dl class="fields">
+    <dt>Type:</dt>
+      <dd>dict</dd>
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+<code class="variable-group">{</code><code class="variable-quote">'</code><code class="variable-string">allow-unauthenticated</code><code class="variable-quote">'</code><code class="variable-op">: </code><code class="variable-quote">'</code><code class="variable-string">False</code><code class="variable-quote">'</code><code class="variable-op">,</code>
+ <code class="variable-quote">'</code><code class="variable-string">arch</code><code class="variable-quote">'</code><code class="variable-op">: </code><code class="variable-quote">'</code><code class="variable-string"></code><code class="variable-quote">'</code><code class="variable-op">,</code>
+ <code class="variable-quote">'</code><code class="variable-string">author-date-is-committer-date</code><code class="variable-quote">'</code><code class="variable-op">: </code><code class="variable-quote">'</code><code class="variable-string">False</code><code class="variable-quote">'</code><code class="variable-op">,</code>
+ <code class="variable-quote">'</code><code class="variable-string">author-is-committer</code><code class="variable-quote">'</code><code class="variable-op">: </code><code class="variable-quote">'</code><code class="variable-string">False</code><code class="variable-quote">'</code><code class="variable-op">,</code>
+ <code class="variable-quote">'</code><code class="variable-string">build</code><code class="variable-quote">'</code><code class="variable-op">: </code><code class="variable-quote">'</code><code class="variable-string">True</code><code class="variable-quote">'</code><code class="variable-op">,</code>
+ <code class="variable-quote">'</code><code class="variable-string">color</code><code class="variable-quote">'</code><code class="variable-op">: </code><code class="variable-quote">'</code><code class="variable-string">auto</code><code class="variable-quote">'</code><code class="variable-op">,</code>
+ <code class="variable-quote">'</code><code class="variable-string">color-scheme</code><code class="variable-quote">'</code><code class="variable-op">: </code><code class="variable-quote">'</code><code class="variable-string"></code><code class="variable-quote">'</code><code class="variable-op">,</code>
+ <code class="variable-quote">'</code><code class="variable-string">commit-msg</code><code class="variable-quote">'</code><code class="variable-op">: </code><code class="variable-quote">'</code><code class="variable-string">Update changelog for %(version)s release</code><code class="variable-quote">'</code><code class="variable-op">,</code>
+<code class="variable-ellipsis">...</code>
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="help"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">help</h3>
+  help messages
+  <dl class="fields">
+    <dt>Type:</dt>
+      <dd>dict</dd>
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+<code class="variable-group">{</code><code class="variable-quote">'</code><code class="variable-string">allow-unauthenticated</code><code class="variable-quote">'</code><code class="variable-op">: </code><code class="variable-quote">'</code><code class="variable-string">Don\'t verify integrity of downloaded sourc</code><span class="variable-linewrap"><img src="crarr.png" alt="\" /></span>
+<code class="variable-string">e, default is \'%(allow-unauthenticated)s\'</code><code class="variable-quote">'</code><code class="variable-op">,</code>
+ <code class="variable-quote">'</code><code class="variable-string">arch</code><code class="variable-quote">'</code><code class="variable-op">: </code><code class="variable-quote">'</code><code class="variable-string">Build for this architecture when using git-pbuilder, default</code><span class="variable-linewrap"><img src="crarr.png" alt="\" /></span>
+<code class="variable-string"> is \'%(arch)s\'</code><code class="variable-quote">'</code><code class="variable-op">,</code>
+ <code class="variable-quote">'</code><code class="variable-string">author-date-is-committer-date</code><code class="variable-quote">'</code><code class="variable-op">: </code><code class="variable-quote">'</code><code class="variable-string">Use the authors\'s date as the comm</code><span class="variable-linewrap"><img src="crarr.png" alt="\" /></span>
+<code class="variable-string">itter\'s date, default is \'%(author-date-is-committer-date)s\'</code><code class="variable-quote">'</code><code class="variable-op">,</code>
+ <code class="variable-quote">'</code><code class="variable-string">author-is-committer</code><code class="variable-quote">'</code><code class="variable-op">: </code><code class="variable-quote">'</code><code class="variable-string">Use the authors\'s name also as the committer</code><span class="variable-linewrap"><img src="crarr.png" alt="\" /></span>
+<code class="variable-string">\'s name, default is \'%(author-is-committer)s\'</code><code class="variable-quote">'</code><code class="variable-op">,</code>
+<code class="variable-ellipsis">...</code>
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="def_config_files"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">def_config_files</h3>
+  list of default config files we parse
+  <dl class="fields">
+    <dt>Type:</dt>
+      <dd>list</dd>
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+<code class="variable-group">[</code><code class="variable-quote">'</code><code class="variable-string">/etc/git-buildpackage/gbp.conf</code><code class="variable-quote">'</code><code class="variable-op">,</code>
+ <code class="variable-quote">'</code><code class="variable-string">~/.gbp.conf</code><code class="variable-quote">'</code><code class="variable-op">,</code>
+ <code class="variable-quote">'</code><code class="variable-string">%(top_dir)s/.gbp.conf</code><code class="variable-quote">'</code><code class="variable-op">,</code>
+ <code class="variable-quote">'</code><code class="variable-string">%(top_dir)s/debian/gbp.conf</code><code class="variable-quote">'</code><code class="variable-op">,</code>
+ <code class="variable-quote">'</code><code class="variable-string">%(git_dir)s/gbp.conf</code><code class="variable-quote">'</code><code class="variable-group">]</code>
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="gbp-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >git-buildpackage</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Mon Nov 10 08:14:14 2014
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

@@ -1,0 +1,4425 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>gbp.git.repository.GitRepository</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="gbp-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >git-buildpackage</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="gbp-module.html">Package&nbsp;gbp</a> ::
+        <a href="gbp.git-module.html">Package&nbsp;git</a> ::
+        <a href="gbp.git.repository-module.html">Module&nbsp;repository</a> ::
+        Class&nbsp;GitRepository
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="gbp.git.repository.GitRepository-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class GitRepository</h1><p class="nomargin-top"></p>
+<pre class="base-tree">
+object --+
+         |
+        <strong class="uidshort">GitRepository</strong>
+</pre>
+
+<dl><dt>Known Subclasses:</dt>
+<dd>
+      <ul class="subclass-list">
+<li><a href="gbp.deb.git.DebianGitRepository-class.html">deb.git.DebianGitRepository</a></li>  </ul>
+</dd></dl>
+
+<hr />
+<p>Represents a git repository at <i>path</i>. It's currently assumed 
+  that the git repository is stored in a directory named <i>.git/</i> below
+  <i>path</i>.</p>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">path</span>)</span><br />
+      x.__init__(...) initializes x; see x.__class__.__doc__ for signature</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="_check_dirs"></a><span class="summary-sig-name">_check_dirs</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Get top level dir and git meta data dir</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>bool</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#_cmd_has_feature" class="summary-sig-name" onclick="show_private();">_cmd_has_feature</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">command</span>,
+        <span class="summary-sig-arg">feature</span>)</span><br />
+      Check if the git command has certain feature enabled.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#_git_command" class="summary-sig-name" onclick="show_private();">_git_command</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">command</span>,
+        <span class="summary-sig-arg">args</span>=<span class="summary-sig-default"><code class="variable-group">[</code><code class="variable-group">]</code></span>,
+        <span class="summary-sig-arg">extra_env</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">interactive</span>=<span class="summary-sig-default">False</span>)</span><br />
+      Execute git command with arguments args and environment env at path.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>tuple</code> of <code>list</code> of <code>str</code> and 
+      <code>int</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#_git_getoutput" class="summary-sig-name" onclick="show_private();">_git_getoutput</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">command</span>,
+        <span class="summary-sig-arg">args</span>=<span class="summary-sig-default"><code class="variable-group">[</code><code class="variable-group">]</code></span>,
+        <span class="summary-sig-arg">extra_env</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">cwd</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Run a git command and return the output</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>tuple</code> of <code>str</code>, <code>str</code>, 
+      <code>int</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#_git_inout" class="summary-sig-name" onclick="show_private();">_git_inout</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">command</span>,
+        <span class="summary-sig-arg">args</span>,
+        <span class="summary-sig-arg">input</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">extra_env</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">cwd</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">capture_stderr</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">capture_stdout</span>=<span class="summary-sig-default">True</span>)</span><br />
+      Run a git command with input and return output</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#_git_inout2" class="summary-sig-name" onclick="show_private();">_git_inout2</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">command</span>,
+        <span class="summary-sig-arg">args</span>,
+        <span class="summary-sig-arg">stdin</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">extra_env</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">cwd</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">capture_stderr</span>=<span class="summary-sig-default">False</span>)</span><br />
+      Quite similar to <code>_git_inout()</code> but returns stdout output 
+      of the git command as a Python generator object, instead.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="_status"></a><span class="summary-sig-name">_status</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">porcelain</span>,
+        <span class="summary-sig-arg">ignore_untracked</span>)</span></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>None</code> or <code>generator</code> of <code>str</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#archive" class="summary-sig-name">archive</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">format</span>,
+        <span class="summary-sig-arg">prefix</span>,
+        <span class="summary-sig-arg">output</span>,
+        <span class="summary-sig-arg">treeish</span>,
+        <span class="summary-sig-arg">paths</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Create an archive from a treeish</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#clean" class="summary-sig-name">clean</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">directories</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">force</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">dry_run</span>=<span class="summary-sig-default">False</span>)</span><br />
+      Remove untracked files from the working tree.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#collect_garbage" class="summary-sig-name">collect_garbage</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">auto</span>=<span class="summary-sig-default">False</span>)</span><br />
+      Cleanup unnecessary files and optimize the local repository</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#force_head" class="summary-sig-name">force_head</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">commit</span>,
+        <span class="summary-sig-arg">hard</span>=<span class="summary-sig-default">False</span>)</span><br />
+      Force HEAD to a specific commit</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><a href="gbp.git.modifier.GitModifier-class.html" 
+      class="link">GitModifier</a></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#get_author_info" class="summary-sig-name">get_author_info</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Determine a sane values for author name and author email from git's 
+      config and environment variables.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>str</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#get_config" class="summary-sig-name">get_config</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">name</span>)</span><br />
+      Gets the config value associated with <i>name</i></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>tuple</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#is_clean" class="summary-sig-name">is_clean</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">ignore_untracked</span>=<span class="summary-sig-default">False</span>)</span><br />
+      Does the repository contain any uncommitted modifications?</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>bool</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#is_empty" class="summary-sig-name">is_empty</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Is the repository empty?</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>str</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#rev_parse" class="summary-sig-name">rev_parse</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">name</span>,
+        <span class="summary-sig-arg">short</span>=<span class="summary-sig-default">0</span>)</span><br />
+      Find the SHA1 of a given name</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#status" class="summary-sig-name">status</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">pathlist</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Check status of repository.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__delattr__</code>,
+      <code>__format__</code>,
+      <code>__getattribute__</code>,
+      <code>__hash__</code>,
+      <code>__new__</code>,
+      <code>__reduce__</code>,
+      <code>__reduce_ex__</code>,
+      <code>__repr__</code>,
+      <code>__setattr__</code>,
+      <code>__sizeof__</code>,
+      <code>__str__</code>,
+      <code>__subclasshook__</code>
+      </p>
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Branches and Merging</th></tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>list</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#_get_branches" class="summary-sig-name" onclick="show_private();">_get_branches</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">remote</span>=<span class="summary-sig-default">False</span>)</span><br />
+      Get a list of branches</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#branch_contains" class="summary-sig-name">branch_contains</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">branch</span>,
+        <span class="summary-sig-arg">commit</span>,
+        <span class="summary-sig-arg">remote</span>=<span class="summary-sig-default">False</span>)</span><br />
+      Check if branch <i>branch</i> contains commit <i>commit</i></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#create_branch" class="summary-sig-name">create_branch</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">branch</span>,
+        <span class="summary-sig-arg">rev</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">force</span>=<span class="summary-sig-default">False</span>)</span><br />
+      Create a new branch</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#delete_branch" class="summary-sig-name">delete_branch</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">branch</span>,
+        <span class="summary-sig-arg">remote</span>=<span class="summary-sig-default">False</span>)</span><br />
+      Delete branch <i>branch</i></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>str</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#get_branch" class="summary-sig-name">get_branch</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      On what branch is the current working copy</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>list</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#get_local_branches" class="summary-sig-name">get_local_branches</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Get a list of local branches</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>str</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#get_merge_base" class="summary-sig-name">get_merge_base</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">commit1</span>,
+        <span class="summary-sig-arg">commit2</span>)</span><br />
+      Get the common ancestor between two commits</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>str</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#get_merge_branch" class="summary-sig-name">get_merge_branch</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">branch</span>)</span><br />
+      Get the branch we'd merge from</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>list</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#get_remote_branches" class="summary-sig-name">get_remote_branches</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Get a list of remote branches</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>str</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#get_upstream_branch" class="summary-sig-name">get_upstream_branch</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">local_branch</span>)</span><br />
+      Get upstream branch for the local branch</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>bool</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#has_branch" class="summary-sig-name">has_branch</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">branch</span>,
+        <span class="summary-sig-arg">remote</span>=<span class="summary-sig-default">False</span>)</span><br />
+      Check if the repository has branch named <i>branch</i>.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>tuple</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#is_fast_forward" class="summary-sig-name">is_fast_forward</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">from_branch</span>,
+        <span class="summary-sig-arg">to_branch</span>)</span><br />
+      Check if an update <i>from from_branch</i> to <i>to_branch</i> would 
+      be a fast forward or if the branch is up to date already.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#merge" class="summary-sig-name">merge</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">commit</span>,
+        <span class="summary-sig-arg">verbose</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">edit</span>=<span class="summary-sig-default">False</span>)</span><br />
+      Merge changes from the named commit into the current branch</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#rename_branch" class="summary-sig-name">rename_branch</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">branch</span>,
+        <span class="summary-sig-arg">newbranch</span>)</span><br />
+      Rename branch</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#set_branch" class="summary-sig-name">set_branch</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">branch</span>)</span><br />
+      Switch to branch <i>branch</i></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#set_upstream_branch" class="summary-sig-name">set_upstream_branch</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">local_branch</span>,
+        <span class="summary-sig-arg">upstream</span>)</span><br />
+      Set upstream branches for local branch</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#update_ref" class="summary-sig-name">update_ref</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">ref</span>,
+        <span class="summary-sig-arg">new</span>,
+        <span class="summary-sig-arg">old</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">msg</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Update ref <i>ref</i> to commit <i>new</i> if <i>ref</i> currently 
+      points to <i>old</i></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Tags</th></tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#create_tag" class="summary-sig-name">create_tag</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">name</span>,
+        <span class="summary-sig-arg">msg</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">commit</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">sign</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">keyid</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Create a new tag.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#delete_tag" class="summary-sig-name">delete_tag</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">tag</span>)</span><br />
+      Delete a tag named <i>tag</i></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>str</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#describe" class="summary-sig-name">describe</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">commitish</span>,
+        <span class="summary-sig-arg">pattern</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">longfmt</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">always</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">abbrev</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">tags</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">exact_match</span>=<span class="summary-sig-default">False</span>)</span><br />
+      Describe commit, relative to the latest tag reachable from it.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>str</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#find_tag" class="summary-sig-name">find_tag</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">commit</span>,
+        <span class="summary-sig-arg">pattern</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Find the closest tag to a given commit</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>list</code> of <code>str</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#get_tags" class="summary-sig-name">get_tags</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">pattern</span>=<span class="summary-sig-default">None</span>)</span><br />
+      List tags</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>bool</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#has_tag" class="summary-sig-name">has_tag</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">tag</span>)</span><br />
+      Check if the repository has a tag named <i>tag</i>.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="move_tag"></a><span class="summary-sig-name">move_tag</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">old</span>,
+        <span class="summary-sig-arg">new</span>)</span></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>bool</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#verify_tag" class="summary-sig-name">verify_tag</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">tag</span>)</span><br />
+      Verify a signed tag</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Trees</th></tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#checkout" class="summary-sig-name">checkout</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">treeish</span>)</span><br />
+      Checkout treeish</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>str</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#get_obj_type" class="summary-sig-name">get_obj_type</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">obj</span>)</span><br />
+      Get type of a git repository object</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>bool</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#has_treeish" class="summary-sig-name">has_treeish</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">treeish</span>)</span><br />
+      Check if the repository has the treeish object <i>treeish</i>.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>list</code> of objects. See above.</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#list_tree" class="summary-sig-name">list_tree</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">treeish</span>,
+        <span class="summary-sig-arg">recurse</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">paths</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Get a trees content.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#make_tree" class="summary-sig-name">make_tree</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">contents</span>)</span><br />
+      Create a tree based on contents.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>str</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#write_tree" class="summary-sig-name">write_tree</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">index_file</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Create a tree object from the current index</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Remote Repositories</th></tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#add_remote_repo" class="summary-sig-name">add_remote_repo</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">name</span>,
+        <span class="summary-sig-arg">url</span>,
+        <span class="summary-sig-arg">tags</span>=<span class="summary-sig-default">True</span>,
+        <span class="summary-sig-arg">fetch</span>=<span class="summary-sig-default">False</span>)</span><br />
+      Add a tracked remote repository</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#fetch" class="summary-sig-name">fetch</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">repo</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">tags</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">depth</span>=<span class="summary-sig-default">0</span>,
+        <span class="summary-sig-arg">refspec</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">all_remotes</span>=<span class="summary-sig-default">False</span>)</span><br />
+      Download objects and refs from another repository.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>dict</code> of <code>list</code> of <code>str</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#get_remote_repos" class="summary-sig-name">get_remote_repos</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Get all remote repositories</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>dict</code> of <code>GitRemote</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#get_remotes" class="summary-sig-name">get_remotes</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Get a list of remote repositories</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>bool</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#has_remote_repo" class="summary-sig-name">has_remote_repo</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">name</span>)</span><br />
+      Do we know about a remote named <i>name</i>?</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#pull" class="summary-sig-name">pull</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">repo</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">ff_only</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">all_remotes</span>=<span class="summary-sig-default">False</span>)</span><br />
+      Fetch and merge from another repository</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#push" class="summary-sig-name">push</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">repo</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">src</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">dst</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">ff_only</span>=<span class="summary-sig-default">True</span>,
+        <span class="summary-sig-arg">force</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">tags</span>=<span class="summary-sig-default">False</span>)</span><br />
+      Push changes to the remote repo</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#push_tag" class="summary-sig-name">push_tag</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">repo</span>,
+        <span class="summary-sig-arg">tag</span>)</span><br />
+      Push a tag to the remote repo</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="remove_remote_repo"></a><span class="summary-sig-name">remove_remote_repo</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">name</span>)</span></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Files</th></tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#add_files" class="summary-sig-name">add_files</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">paths</span>,
+        <span class="summary-sig-arg">force</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">untracked</span>=<span class="summary-sig-default">True</span>,
+        <span class="summary-sig-arg">index_file</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">work_tree</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Add files to a the repository</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>list</code> of <code>str</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#list_files" class="summary-sig-name">list_files</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">types</span>=<span class="summary-sig-default"><code class="variable-group">[</code><code class="variable-quote">'</code><code class="variable-string">cached</code><code class="variable-quote">'</code><code class="variable-group">]</code></span>)</span><br />
+      List files in index and working tree</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#remove_files" class="summary-sig-name">remove_files</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">paths</span>,
+        <span class="summary-sig-arg">verbose</span>=<span class="summary-sig-default">False</span>)</span><br />
+      Remove files from the repository</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>str</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#write_file" class="summary-sig-name">write_file</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">filename</span>,
+        <span class="summary-sig-arg">filters</span>=<span class="summary-sig-default">True</span>)</span><br />
+      Hash a single file and write it into the object database</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Comitting</th></tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="_commit"></a><span class="summary-sig-name">_commit</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">msg</span>,
+        <span class="summary-sig-arg">args</span>=<span class="summary-sig-default"><code class="variable-group">[</code><code class="variable-group">]</code></span>,
+        <span class="summary-sig-arg">author_info</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">committer_info</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">edit</span>=<span class="summary-sig-default">False</span>)</span></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#commit_all" class="summary-sig-name">commit_all</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">msg</span>,
+        <span class="summary-sig-arg">author_info</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">edit</span>=<span class="summary-sig-default">False</span>)</span><br />
+      Commit all changes to the repository</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#commit_dir" class="summary-sig-name">commit_dir</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">unpack_dir</span>,
+        <span class="summary-sig-arg">msg</span>,
+        <span class="summary-sig-arg">branch</span>,
+        <span class="summary-sig-arg">other_parents</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">author</span>=<span class="summary-sig-default"><code class="variable-group">{</code><code class="variable-group">}</code></span>,
+        <span class="summary-sig-arg">committer</span>=<span class="summary-sig-default"><code class="variable-group">{</code><code class="variable-group">}</code></span>,
+        <span class="summary-sig-arg">create_missing_branch</span>=<span class="summary-sig-default">False</span>)</span><br />
+      Replace the current tip of branch <i>branch</i> with the contents 
+      from <i>unpack_dir</i></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#commit_files" class="summary-sig-name">commit_files</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">files</span>,
+        <span class="summary-sig-arg">msg</span>,
+        <span class="summary-sig-arg">author_info</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">committer_info</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">edit</span>=<span class="summary-sig-default">False</span>)</span><br />
+      Commit the given files to the repository</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#commit_staged" class="summary-sig-name">commit_staged</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">msg</span>,
+        <span class="summary-sig-arg">author_info</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">edit</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">committer_info</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Commit currently staged files to the repository</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#commit_tree" class="summary-sig-name">commit_tree</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">tree</span>,
+        <span class="summary-sig-arg">msg</span>,
+        <span class="summary-sig-arg">parents</span>,
+        <span class="summary-sig-arg">author</span>=<span class="summary-sig-default"><code class="variable-group">{</code><code class="variable-group">}</code></span>,
+        <span class="summary-sig-arg">committer</span>=<span class="summary-sig-default"><code class="variable-group">{</code><code class="variable-group">}</code></span>)</span><br />
+      Commit a tree with commit msg <i>msg</i> and parents <i>parents</i></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>str</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#create_tree" class="summary-sig-name">create_tree</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">unpack_dir</span>)</span><br />
+      Create a tree object out of a directory content</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Commit Information</th></tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">dict</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#get_commit_info" class="summary-sig-name">get_commit_info</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">commitish</span>)</span><br />
+      Look up data of a specific commit-ish.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#get_commits" class="summary-sig-name">get_commits</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">since</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">until</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">paths</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">num</span>=<span class="summary-sig-default">0</span>,
+        <span class="summary-sig-arg">first_parent</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">options</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Get commits from since to until touching paths</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>str</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#get_subject" class="summary-sig-name">get_subject</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">commit</span>)</span><br />
+      Gets the subject of a commit.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#grep_log" class="summary-sig-name">grep_log</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">regex</span>,
+        <span class="summary-sig-arg">since</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Get commmits matching <i>regex</i></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="show"></a><span class="summary-sig-name">show</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">id</span>)</span><br />
+      git-show id</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Patches</th></tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="apply_patch"></a><span class="summary-sig-name">apply_patch</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">patch</span>,
+        <span class="summary-sig-arg">index</span>=<span class="summary-sig-default">True</span>,
+        <span class="summary-sig-arg">context</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">strip</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Apply a patch using git apply</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>str</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#diff" class="summary-sig-name">diff</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">obj1</span>,
+        <span class="summary-sig-arg">obj2</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">paths</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">stat</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">summary</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">text</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">ignore_submodules</span>=<span class="summary-sig-default">True</span>)</span><br />
+      Diff two git repository objects</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>defaultdict</code> of <code>str</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#diff_status" class="summary-sig-name">diff_status</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">obj1</span>,
+        <span class="summary-sig-arg">obj2</span>)</span><br />
+      Get file-status of two git repository objects</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#format_patches" class="summary-sig-name">format_patches</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">start</span>,
+        <span class="summary-sig-arg">end</span>,
+        <span class="summary-sig-arg">output_dir</span>,
+        <span class="summary-sig-arg">signature</span>=<span class="summary-sig-default">True</span>,
+        <span class="summary-sig-arg">thread</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">symmetric</span>=<span class="summary-sig-default">True</span>)</span><br />
+      Output the commits between start and end as patches in output_dir.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Submodules</th></tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#add_submodule" class="summary-sig-name">add_submodule</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">repo_path</span>)</span><br />
+      Add a submodule</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">list of tuples</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#get_submodules" class="summary-sig-name">get_submodules</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">treeish</span>,
+        <span class="summary-sig-arg">path</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">recursive</span>=<span class="summary-sig-default">True</span>)</span><br />
+      List the submodules of treeish</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>bool</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#has_submodules" class="summary-sig-name">has_submodules</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">treeish</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Does the repo have any submodules?</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#update_submodules" class="summary-sig-name">update_submodules</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">init</span>=<span class="summary-sig-default">True</span>,
+        <span class="summary-sig-arg">recursive</span>=<span class="summary-sig-default">True</span>,
+        <span class="summary-sig-arg">fetch</span>=<span class="summary-sig-default">False</span>)</span><br />
+      Update all submodules</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS METHODS ==================== -->
+<a name="section-ClassMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Class Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-ClassMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#__git_inout" class="summary-sig-name" onclick="show_private();">__git_inout</a>(<span class="summary-sig-arg">cls</span>,
+        <span class="summary-sig-arg">command</span>,
+        <span class="summary-sig-arg">args</span>,
+        <span class="summary-sig-arg">stdin</span>,
+        <span class="summary-sig-arg">extra_env</span>,
+        <span class="summary-sig-arg">cwd</span>,
+        <span class="summary-sig-arg">capture_stderr</span>,
+        <span class="summary-sig-arg">capture_stdout</span>)</span><br />
+      Run a git command without a a GitRepostitory instance.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Repository Creation</th></tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><a href="gbp.git.repository.GitRepository-class.html" 
+      class="link">GitRepository</a></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#clone" class="summary-sig-name">clone</a>(<span class="summary-sig-arg">klass</span>,
+        <span class="summary-sig-arg">path</span>,
+        <span class="summary-sig-arg">remote</span>,
+        <span class="summary-sig-arg">depth</span>=<span class="summary-sig-default">0</span>,
+        <span class="summary-sig-arg">recursive</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">mirror</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">bare</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">auto_name</span>=<span class="summary-sig-default">True</span>)</span><br />
+      Clone a git repository at <i>remote</i> to <i>path</i>.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><a href="gbp.git.repository.GitRepository-class.html" 
+      class="link">GitRepository</a></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#create" class="summary-sig-name">create</a>(<span class="summary-sig-arg">klass</span>,
+        <span class="summary-sig-arg">path</span>,
+        <span class="summary-sig-arg">description</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">bare</span>=<span class="summary-sig-default">False</span>)</span><br />
+      Create a repository at path</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== STATIC METHODS ==================== -->
+<a name="section-StaticMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Static Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-StaticMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="__build_env"></a><span class="summary-sig-name">__build_env</span>(<span class="summary-sig-arg">extra_env</span>)</span><br />
+      Prepare environment for subprocess calls</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.git.repository.GitRepository-class.html#strip_sha1" class="summary-sig-name">strip_sha1</a>(<span class="summary-sig-arg">sha1</span>,
+        <span class="summary-sig-arg">length</span>=<span class="summary-sig-default">0</span>)</span><br />
+      Strip a given sha1 and check if the resulting hash has the expected 
+      length.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== INSTANCE VARIABLES ==================== -->
+<a name="section-InstanceVariables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceVariables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>bool</code></span>
+    </td><td class="summary">
+        <a name="_bare"></a><span class="summary-name">_bare</span><br />
+      Whether this is a bare repository
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>str</code></span>
+    </td><td class="summary">
+        <a name="_path"></a><span class="summary-name">_path</span><br />
+      The path to the working tree
+    </td>
+  </tr>
+</table>
+<!-- ==================== PROPERTIES ==================== -->
+<a name="section-Properties"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Properties</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Properties"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="gbp.git.repository.GitRepository-class.html#bare" class="summary-name">bare</a><br />
+      Wheter this is a bare repository
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="gbp.git.repository.GitRepository-class.html#branch" class="summary-name">branch</a><br />
+      The currently checked out branch
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="gbp.git.repository.GitRepository-class.html#git_dir" class="summary-name">git_dir</a><br />
+      The absolute path to git's metadata
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="gbp.git.repository.GitRepository-class.html#head" class="summary-name">head</a><br />
+      return the SHA1 of the current HEAD
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="gbp.git.repository.GitRepository-class.html#path" class="summary-name">path</a><br />
+      The absolute path to the repository
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="gbp.git.repository.GitRepository-class.html#tags" class="summary-name">tags</a><br />
+      List of all tags in the repository
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__class__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Method Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-MethodDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="__git_inout"></a>
+<div class="private">
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__git_inout</span>(<span class="sig-arg">cls</span>,
+        <span class="sig-arg">command</span>,
+        <span class="sig-arg">args</span>,
+        <span class="sig-arg">stdin</span>,
+        <span class="sig-arg">extra_env</span>,
+        <span class="sig-arg">cwd</span>,
+        <span class="sig-arg">capture_stderr</span>,
+        <span class="sig-arg">capture_stdout</span>)</span>
+    <br /><em class="fname">Class Method</em>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Run a git command without a a GitRepostitory instance.</p>
+  <p>Returns the git command output (stdout, stderr) as a Python generator 
+  object.</p>
+  <dl class="fields">
+  </dl>
+<div class="fields">      <p><strong>Note:</strong>
+        The caller must consume the iterator that is returned, in order to 
+        make sure that the git command runs and terminates.
+      </p>
+</div></td></tr></table>
+</div>
+<a name="__init__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">path</span>)</span>
+    <br /><em class="fname">(Constructor)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>x.__init__(...) initializes x; see x.__class__.__doc__ for 
+  signature</p>
+  <dl class="fields">
+    <dt>Raises:</dt>
+    <dd><ul class="nomargin-top">
+        <li><code><strong class='fraise'><a href="gbp.git.repository.GitRepositoryError-class.html">GitRepositoryError</a></strong></code> - on git errors GitRepositoryError is raised by all methods.</li>
+    </ul></dd>
+    <dt>Overrides:
+        object.__init__
+        <dd><em class="note">(inherited documentation)</em></dd>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="_cmd_has_feature"></a>
+<div class="private">
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">_cmd_has_feature</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">command</span>,
+        <span class="sig-arg">feature</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Check if the git command has certain feature enabled.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>command</code></strong> (<code>str</code>) - git command</li>
+        <li><strong class="pname"><code>feature</code></strong> (<code>str</code>) - feature / command option to check</li>
+    </ul></dd>
+    <dt>Returns: <code>bool</code></dt>
+        <dd>True if feature is supported</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="_get_branches"></a>
+<div class="private">
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">_get_branches</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">remote</span>=<span class="sig-default">False</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get a list of branches</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>remote</code></strong> (<code>bool</code>) - whether to list local or remote branches</li>
+    </ul></dd>
+    <dt>Returns: <code>list</code></dt>
+        <dd>local or remote branches</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="_git_command"></a>
+<div class="private">
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">_git_command</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">command</span>,
+        <span class="sig-arg">args</span>=<span class="sig-default"><code class="variable-group">[</code><code class="variable-group">]</code></span>,
+        <span class="sig-arg">extra_env</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">interactive</span>=<span class="sig-default">False</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Execute git command with arguments args and environment env at 
+  path.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>command</code></strong> (<code>str</code>) - git command</li>
+        <li><strong class="pname"><code>args</code></strong> (<code>list</code>) - command line arguments</li>
+        <li><strong class="pname"><code>extra_env</code></strong> (<code>dict</code>) - extra environment variables to set when running command</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="_git_getoutput"></a>
+<div class="private">
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">_git_getoutput</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">command</span>,
+        <span class="sig-arg">args</span>=<span class="sig-default"><code class="variable-group">[</code><code class="variable-group">]</code></span>,
+        <span class="sig-arg">extra_env</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">cwd</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Run a git command and return the output</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>command</code></strong> (<code>str</code>) - git command to run</li>
+        <li><strong class="pname"><code>args</code></strong> (<code>list</code>) - list of arguments</li>
+        <li><strong class="pname"><code>extra_env</code></strong> (<code>dict</code>) - extra environment variables to pass</li>
+        <li><strong class="pname"><code>cwd</code></strong> (<code>str</code>) - directory to swith to when running the command, defaults to 
+          <i>self.path</i></li>
+    </ul></dd>
+    <dt>Returns: <code>tuple</code> of <code>list</code> of <code>str</code> and 
+      <code>int</code></dt>
+        <dd>stdout, return code</dd>
+  </dl>
+<div class="fields">      <p><strong>Deprecated:</strong>
+        use <a href="gbp.git.repository.GitRepository-class.html#_git_inout" 
+    class="link" 
+    onclick="show_private();">gbp.git.repository.GitRepository._git_inout</a>
+    instead.
+      </p>
+</div></td></tr></table>
+</div>
+<a name="_git_inout"></a>
+<div class="private">
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">_git_inout</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">command</span>,
+        <span class="sig-arg">args</span>,
+        <span class="sig-arg">input</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">extra_env</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">cwd</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">capture_stderr</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">capture_stdout</span>=<span class="sig-default">True</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Run a git command with input and return output</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>command</code></strong> (<code>str</code>) - git command to run</li>
+        <li><strong class="pname"><code>input</code></strong> (<code>str</code>) - input to pipe to command</li>
+        <li><strong class="pname"><code>args</code></strong> (<code>list</code>) - list of arguments</li>
+        <li><strong class="pname"><code>extra_env</code></strong> (<code>dict</code>) - extra environment variables to pass</li>
+        <li><strong class="pname"><code>capture_stderr</code></strong> (<code>bool</code>) - whether to capture stderr</li>
+    </ul></dd>
+    <dt>Returns: <code>tuple</code> of <code>str</code>, <code>str</code>, 
+      <code>int</code></dt>
+        <dd>stdout, stderr, return code</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="_git_inout2"></a>
+<div class="private">
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">_git_inout2</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">command</span>,
+        <span class="sig-arg">args</span>,
+        <span class="sig-arg">stdin</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">extra_env</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">cwd</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">capture_stderr</span>=<span class="sig-default">False</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Quite similar to <code>_git_inout()</code> but returns stdout output 
+  of the git command as a Python generator object, instead. Also, stderr is
+  not returned.</p>
+  <dl class="fields">
+  </dl>
+<div class="fields">      <p><strong>Note:</strong>
+        The caller must consume the iterator that is returned, in order to 
+        make sure that the git command runs and terminates.
+      </p>
+</div></td></tr></table>
+</div>
+<a name="add_files"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">add_files</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">paths</span>,
+        <span class="sig-arg">force</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">untracked</span>=<span class="sig-default">True</span>,
+        <span class="sig-arg">index_file</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">work_tree</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Add files to a the repository</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>paths</code></strong> (list or <code>str</code>) - list of files to add</li>
+        <li><strong class="pname"><code>force</code></strong> (<code>bool</code>) - add files even if they would be ignored by .gitignore</li>
+        <li><strong class="pname"><code>untracked</code></strong> (<code>bool</code>) - add also previously untracked files</li>
+        <li><strong class="pname"><code>index_file</code></strong> - alternative index file to use</li>
+        <li><strong class="pname"><code>work_tree</code></strong> - alternative working tree to use</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="add_remote_repo"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">add_remote_repo</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">name</span>,
+        <span class="sig-arg">url</span>,
+        <span class="sig-arg">tags</span>=<span class="sig-default">True</span>,
+        <span class="sig-arg">fetch</span>=<span class="sig-default">False</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Add a tracked remote repository</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>name</code></strong> (<code>str</code>) - the name to use for the remote</li>
+        <li><strong class="pname"><code>url</code></strong> (<code>str</code>) - the url to add</li>
+        <li><strong class="pname"><code>tags</code></strong> (<code>bool</code>) - whether to fetch tags</li>
+        <li><strong class="pname"><code>fetch</code></strong> (<code>bool</code>) - whether to fetch immediately from the remote side</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="add_submodule"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">add_submodule</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">repo_path</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Add a submodule</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>repo_path</code></strong> (<code>str</code>) - path to submodule</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="archive"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">archive</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">format</span>,
+        <span class="sig-arg">prefix</span>,
+        <span class="sig-arg">output</span>,
+        <span class="sig-arg">treeish</span>,
+        <span class="sig-arg">paths</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Create an archive from a treeish</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>format</code></strong> (<code>str</code>) - the type of archive to create, e.g. 'tar.gz'</li>
+        <li><strong class="pname"><code>prefix</code></strong> (<code>str</code>) - prefix to prepend to each filename in the archive</li>
+        <li><strong class="pname"><code>output</code></strong> (<code>str</code> or <code>None</code>) - the name of the archive to create, empty string or 
+          <code>None</code> gives data as return value</li>
+        <li><strong class="pname"><code>treeish</code></strong> (<code>str</code>) - the treeish to create the archive from</li>
+        <li><strong class="pname"><code>paths</code></strong> (<code>list</code> of <code>str</code>) - List of paths to include in the archive</li>
+    </ul></dd>
+    <dt>Returns: <code>None</code> or <code>generator</code> of <code>str</code></dt>
+        <dd>archive data as a generator object</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="branch_contains"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">branch_contains</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">branch</span>,
+        <span class="sig-arg">commit</span>,
+        <span class="sig-arg">remote</span>=<span class="sig-default">False</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Check if branch <i>branch</i> contains commit <i>commit</i></p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>branch</code></strong> (<code>str</code>) - the branch the commit should be on</li>
+        <li><strong class="pname"><code>commit</code></strong> (<code>str</code>) - the <code>str</code> commit to check</li>
+        <li><strong class="pname"><code>remote</code></strong> (<code>bool</code>) - whether to check remote instead of local branches</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="checkout"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">checkout</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">treeish</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Checkout treeish</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>treeish</code></strong> (<code>str</code>) - the treeish to check out</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="clean"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">clean</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">directories</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">force</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">dry_run</span>=<span class="sig-default">False</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Remove untracked files from the working tree.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>directories</code></strong> (<code>bool</code>) - remove untracked directories, too</li>
+        <li><strong class="pname"><code>force</code></strong> (<code>bool</code>) - satisfy git configuration variable clean.requireForce</li>
+        <li><strong class="pname"><code>dry_run</code></strong> (<code>bool</code>) - don&#8217;t actually remove anything</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="clone"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">clone</span>(<span class="sig-arg">klass</span>,
+        <span class="sig-arg">path</span>,
+        <span class="sig-arg">remote</span>,
+        <span class="sig-arg">depth</span>=<span class="sig-default">0</span>,
+        <span class="sig-arg">recursive</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">mirror</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">bare</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">auto_name</span>=<span class="sig-default">True</span>)</span>
+    <br /><em class="fname">Class Method</em>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Clone a git repository at <i>remote</i> to <i>path</i>.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>path</code></strong> (<code>str</code>) - where to clone the repository to</li>
+        <li><strong class="pname"><code>remote</code></strong> (<code>str</code>) - URL to clone</li>
+        <li><strong class="pname"><code>depth</code></strong> (<code>int</code>) - create a shallow clone of depth <i>depth</i></li>
+        <li><strong class="pname"><code>recursive</code></strong> (<code>bool</code>) - whether to clone submodules</li>
+        <li><strong class="pname"><code>mirror</code></strong> (<code>bool</code>) - whether to pass --mirror to git-clone</li>
+        <li><strong class="pname"><code>bare</code></strong> (<code>bool</code>) - whether to create a bare repository</li>
+        <li><strong class="pname"><code>auto_name</code></strong> (<code>bool</code>) - If <i>True</i> create a directory below <i>path</i> based on the 
+          <i>remote</i>s name. Otherwise create the repo directly at 
+          <i>path</i>.</li>
+    </ul></dd>
+    <dt>Returns: <a href="gbp.git.repository.GitRepository-class.html" 
+      class="link">GitRepository</a></dt>
+        <dd>git repository object</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="collect_garbage"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">collect_garbage</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">auto</span>=<span class="sig-default">False</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Cleanup unnecessary files and optimize the local repository</p>
+  <p>param auto: only cleanup if required param auto: <code>bool</code></p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="commit_all"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">commit_all</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">msg</span>,
+        <span class="sig-arg">author_info</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">edit</span>=<span class="sig-default">False</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Commit all changes to the repository</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>msg</code></strong> (<code>str</code>) - commit message</li>
+        <li><strong class="pname"><code>author_info</code></strong> (<a href="gbp.git.modifier.GitModifier-class.html" 
+          class="link">GitModifier</a>) - authorship information</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="commit_dir"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">commit_dir</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">unpack_dir</span>,
+        <span class="sig-arg">msg</span>,
+        <span class="sig-arg">branch</span>,
+        <span class="sig-arg">other_parents</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">author</span>=<span class="sig-default"><code class="variable-group">{</code><code class="variable-group">}</code></span>,
+        <span class="sig-arg">committer</span>=<span class="sig-default"><code class="variable-group">{</code><code class="variable-group">}</code></span>,
+        <span class="sig-arg">create_missing_branch</span>=<span class="sig-default">False</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Replace the current tip of branch <i>branch</i> with the contents from
+  <i>unpack_dir</i></p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>unpack_dir</code></strong> (<code>str</code>) - content to add</li>
+        <li><strong class="pname"><code>msg</code></strong> (<code>str</code>) - commit message to use</li>
+        <li><strong class="pname"><code>branch</code></strong> (<code>str</code>) - branch to add the contents of unpack_dir to</li>
+        <li><strong class="pname"><code>other_parents</code></strong> (<code>list</code> of <code>str</code>) - additional parents of this commit</li>
+        <li><strong class="pname"><code>author</code></strong> (<code>dict</code> with keys <i>name</i>, <i>email</i>, 
+          <i>date</i>) - author information to use for commit</li>
+        <li><strong class="pname"><code>committer</code></strong> (<code>dict</code> with keys <i>name</i>, <i>email</i>, 
+          <i>date</i> or <a href="gbp.git.modifier.GitModifier-class.html" 
+          class="link">GitModifier</a>) - committer information to use for commit</li>
+        <li><strong class="pname"><code>create_missing_branch</code></strong> (<code>bool</code>) - create <i>branch</i> as detached branch if it doesn't already 
+          exist.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="commit_files"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">commit_files</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">files</span>,
+        <span class="sig-arg">msg</span>,
+        <span class="sig-arg">author_info</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">committer_info</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">edit</span>=<span class="sig-default">False</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Commit the given files to the repository</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>files</code></strong> (<code>str</code> or <code>list</code>) - file or files to commit</li>
+        <li><strong class="pname"><code>msg</code></strong> (<code>str</code>) - commit message</li>
+        <li><strong class="pname"><code>author_info</code></strong> (<a href="gbp.git.modifier.GitModifier-class.html" 
+          class="link">GitModifier</a>) - authorship information</li>
+        <li><strong class="pname"><code>committer_info</code></strong> (<a href="gbp.git.modifier.GitModifier-class.html" 
+          class="link">GitModifier</a>) - committer information</li>
+        <li><strong class="pname"><code>edit</code></strong> (<code>bool</code>) - whether to spawn an editor to edit the commit info</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="commit_staged"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">commit_staged</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">msg</span>,
+        <span class="sig-arg">author_info</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">edit</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">committer_info</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Commit currently staged files to the repository</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>msg</code></strong> (<code>str</code>) - commit message</li>
+        <li><strong class="pname"><code>author_info</code></strong> (<a href="gbp.git.modifier.GitModifier-class.html" 
+          class="link">GitModifier</a>) - authorship information</li>
+        <li><strong class="pname"><code>edit</code></strong> (<code>bool</code>) - whether to spawn an editor to edit the commit info</li>
+        <li><strong class="pname"><code>committer_info</code></strong> (<a href="gbp.git.modifier.GitModifier-class.html" 
+          class="link">GitModifier</a>) - committer information</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="commit_tree"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">commit_tree</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">tree</span>,
+        <span class="sig-arg">msg</span>,
+        <span class="sig-arg">parents</span>,
+        <span class="sig-arg">author</span>=<span class="sig-default"><code class="variable-group">{</code><code class="variable-group">}</code></span>,
+        <span class="sig-arg">committer</span>=<span class="sig-default"><code class="variable-group">{</code><code class="variable-group">}</code></span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Commit a tree with commit msg <i>msg</i> and parents 
+  <i>parents</i></p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>tree</code></strong> - tree to commit</li>
+        <li><strong class="pname"><code>msg</code></strong> - commit message</li>
+        <li><strong class="pname"><code>parents</code></strong> - parents of this commit</li>
+        <li><strong class="pname"><code>author</code></strong> (<code>dict</code> with keys 'name' and 'email' or <a 
+          href="gbp.git.modifier.GitModifier-class.html" 
+          class="link">GitModifier</a>) - authorship information</li>
+        <li><strong class="pname"><code>committer</code></strong> (<code>dict</code> with keys 'name' and 'email') - committer information</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="create"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">create</span>(<span class="sig-arg">klass</span>,
+        <span class="sig-arg">path</span>,
+        <span class="sig-arg">description</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">bare</span>=<span class="sig-default">False</span>)</span>
+    <br /><em class="fname">Class Method</em>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Create a repository at path</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>path</code></strong> (<code>str</code>) - where to create the repository</li>
+        <li><strong class="pname"><code>bare</code></strong> (<code>bool</code>) - whether to create a bare repository</li>
+    </ul></dd>
+    <dt>Returns: <a href="gbp.git.repository.GitRepository-class.html" 
+      class="link">GitRepository</a></dt>
+        <dd>git repository object</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="create_branch"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">create_branch</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">branch</span>,
+        <span class="sig-arg">rev</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">force</span>=<span class="sig-default">False</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Create a new branch</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>branch</code></strong> - the branch's name</li>
+        <li><strong class="pname"><code>rev</code></strong> - where to start the branch from</li>
+        <li><strong class="pname"><code>force</code></strong> - reset branch HEAD to start point, if it already exists
+          <p>If rev is None the branch starts form the current HEAD.</p></li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="create_tag"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">create_tag</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">name</span>,
+        <span class="sig-arg">msg</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">commit</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">sign</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">keyid</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Create a new tag.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>name</code></strong> (<code>str</code>) - the tag's name</li>
+        <li><strong class="pname"><code>msg</code></strong> (<code>str</code>) - The tag message.</li>
+        <li><strong class="pname"><code>commit</code></strong> (<code>str</code>) - the commit or object to create the tag at, default is <i>HEAD</i></li>
+        <li><strong class="pname"><code>sign</code></strong> (<code>bool</code>) - Whether to sing the tag</li>
+        <li><strong class="pname"><code>keyid</code></strong> (<code>str</code>) - the GPG keyid used to sign the tag</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="create_tree"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">create_tree</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">unpack_dir</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Create a tree object out of a directory content</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>unpack_dir</code></strong> (<code>str</code>) - content to add</li>
+    </ul></dd>
+    <dt>Returns: <code>str</code></dt>
+        <dd>the tree object hash</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="delete_branch"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">delete_branch</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">branch</span>,
+        <span class="sig-arg">remote</span>=<span class="sig-default">False</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Delete branch <i>branch</i></p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>branch</code></strong> (<code>str</code>) - name of the branch to delete</li>
+        <li><strong class="pname"><code>remote</code></strong> - delete a remote branch</li>
+        <li><strong class="pname"><code>remote</code></strong> - <code>bool</code></li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="delete_tag"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">delete_tag</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">tag</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Delete a tag named <i>tag</i></p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>tag</code></strong> (<code>str</code>) - the tag to delete</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="describe"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">describe</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">commitish</span>,
+        <span class="sig-arg">pattern</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">longfmt</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">always</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">abbrev</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">tags</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">exact_match</span>=<span class="sig-default">False</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Describe commit, relative to the latest tag reachable from it.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>commitish</code></strong> (<code>str</code>) - the commit-ish to describe</li>
+        <li><strong class="pname"><code>pattern</code></strong> (<code>str</code>) - only look for tags matching <i>pattern</i></li>
+        <li><strong class="pname"><code>longfmt</code></strong> (<code>bool</code>) - describe the commit in the long format</li>
+        <li><strong class="pname"><code>always</code></strong> (<code>bool</code>) - return commit sha1 as fallback if no tag is found</li>
+        <li><strong class="pname"><code>abbrev</code></strong> (None or <code>long</code>) - abbreviate sha1 to given length instead of the default</li>
+        <li><strong class="pname"><code>tags</code></strong> (<code>bool</code>) - enable matching a lightweight (non-annotated) tag</li>
+        <li><strong class="pname"><code>exact_match</code></strong> (<code>bool</code>) - only output exact matches (a tag directly references the supplied
+          commit)</li>
+    </ul></dd>
+    <dt>Returns: <code>str</code></dt>
+        <dd>tag name plus/or the abbreviated sha1</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="diff"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">diff</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">obj1</span>,
+        <span class="sig-arg">obj2</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">paths</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">stat</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">summary</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">text</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">ignore_submodules</span>=<span class="sig-default">True</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Diff two git repository objects</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>obj1</code></strong> (<code>str</code>) - first object</li>
+        <li><strong class="pname"><code>obj2</code></strong> (<code>str</code>) - second object</li>
+        <li><strong class="pname"><code>paths</code></strong> (<code>list</code>) - List of paths to diff</li>
+        <li><strong class="pname"><code>stat</code></strong> (<code>bool</code> or <code>int</code> or <code>str</code>) - Show diffstat</li>
+        <li><strong class="pname"><code>summary</code></strong> (<code>bool</code>) - Show diffstat</li>
+        <li><strong class="pname"><code>text</code></strong> (<code>bool</code>) - Generate textual diffs, treat all files as text</li>
+        <li><strong class="pname"><code>ignore_submodules</code></strong> (<code>bool</code>) - ignore changes to submodules</li>
+    </ul></dd>
+    <dt>Returns: <code>str</code></dt>
+        <dd>diff</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="diff_status"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">diff_status</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">obj1</span>,
+        <span class="sig-arg">obj2</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get file-status of two git repository objects</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>obj1</code></strong> (<code>str</code>) - first object</li>
+        <li><strong class="pname"><code>obj2</code></strong> (<code>str</code>) - second object</li>
+    </ul></dd>
+    <dt>Returns: <code>defaultdict</code> of <code>str</code></dt>
+        <dd>name-status</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="fetch"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">fetch</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">repo</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">tags</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">depth</span>=<span class="sig-default">0</span>,
+        <span class="sig-arg">refspec</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">all_remotes</span>=<span class="sig-default">False</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Download objects and refs from another repository.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>repo</code></strong> (<code>str</code>) - repository to fetch from</li>
+        <li><strong class="pname"><code>tags</code></strong> (<code>bool</code>) - whether to fetch all tag objects</li>
+        <li><strong class="pname"><code>depth</code></strong> (<code>int</code>) - deepen the history of (shallow) repository to depth <i>depth</i></li>
+        <li><strong class="pname"><code>refspec</code></strong> (<code>str</code>) - refspec to use instead of the default from git config</li>
+        <li><strong class="pname"><code>all_remotes</code></strong> (<code>bool</code>) - fetch all remotes</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="find_tag"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">find_tag</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">commit</span>,
+        <span class="sig-arg">pattern</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Find the closest tag to a given commit</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>commit</code></strong> (<code>str</code>) - the commit to describe</li>
+        <li><strong class="pname"><code>pattern</code></strong> (<code>str</code>) - only look for tags matching <i>pattern</i></li>
+    </ul></dd>
+    <dt>Returns: <code>str</code></dt>
+        <dd>the found tag</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="force_head"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">force_head</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">commit</span>,
+        <span class="sig-arg">hard</span>=<span class="sig-default">False</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Force HEAD to a specific commit</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>commit</code></strong> - commit to move HEAD to</li>
+        <li><strong class="pname"><code>hard</code></strong> (<code>bool</code>) - also update the working copy</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="format_patches"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">format_patches</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">start</span>,
+        <span class="sig-arg">end</span>,
+        <span class="sig-arg">output_dir</span>,
+        <span class="sig-arg">signature</span>=<span class="sig-default">True</span>,
+        <span class="sig-arg">thread</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">symmetric</span>=<span class="sig-default">True</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Output the commits between start and end as patches in output_dir.</p>
+  <p>This outputs the revisions <i>start...end</i> by default. When using 
+  <i>symmetric</i> to <code>false</code> it uses <i>start..end</i> 
+  instead.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>start</code></strong> - the commit on the left side of the revision range</li>
+        <li><strong class="pname"><code>end</code></strong> - the commit on the right hand side of the revisino range</li>
+        <li><strong class="pname"><code>output_dir</code></strong> - directory to write the patches to</li>
+        <li><strong class="pname"><code>signature</code></strong> - whether to output a signature</li>
+        <li><strong class="pname"><code>thread</code></strong> - whether to include In-Reply-To references</li>
+        <li><strong class="pname"><code>symmetric</code></strong> - whether to use the symmetric difference (see above)</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_author_info"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_author_info</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Determine a sane values for author name and author email from git's 
+  config and environment variables.</p>
+  <dl class="fields">
+    <dt>Returns: <a href="gbp.git.modifier.GitModifier-class.html" 
+      class="link">GitModifier</a></dt>
+        <dd>name and email</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_branch"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_branch</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>On what branch is the current working copy</p>
+  <dl class="fields">
+    <dt>Returns: <code>str</code></dt>
+        <dd>current branch or <code>None</code> in an empty repo</dd>
+    <dt>Raises:</dt>
+    <dd><ul class="nomargin-top">
+        <li><code><strong class='fraise'><a href="gbp.git.repository.GitRepositoryError-class.html">GitRepositoryError</a></strong></code> - if HEAD is not a symbolic ref (e.g. when in detached HEAD state)</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_commit_info"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_commit_info</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">commitish</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Look up data of a specific commit-ish. Dereferences given commit-ish 
+  to the commit it points to.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>commitish</code></strong> - the commit-ish to inspect</li>
+    </ul></dd>
+    <dt>Returns: dict</dt>
+        <dd>the commit's including id, author, email, subject and body</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_commits"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_commits</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">since</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">until</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">paths</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">num</span>=<span class="sig-default">0</span>,
+        <span class="sig-arg">first_parent</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">options</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get commits from since to until touching paths</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>since</code></strong> (<code>str</code>) - commit to start from</li>
+        <li><strong class="pname"><code>until</code></strong> (<code>str</code>) - last commit to get</li>
+        <li><strong class="pname"><code>paths</code></strong> (<code>list</code> of <code>str</code>) - only list commits touching paths</li>
+        <li><strong class="pname"><code>num</code></strong> (<code>int</code>) - maximum number of commits to fetch</li>
+        <li><strong class="pname"><code>options</code></strong> (<code>list</code> of <code>str</code>ings) - list of additional options passed to git log</li>
+        <li><strong class="pname"><code>first_parent</code></strong> (<code>bool</code>) - only follow first parent when seeing a merge commit</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_config"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_config</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">name</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Gets the config value associated with <i>name</i></p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>name</code></strong> - config value to get</li>
+    </ul></dd>
+    <dt>Returns: <code>str</code></dt>
+        <dd>fetched config value</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_local_branches"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_local_branches</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get a list of local branches</p>
+  <dl class="fields">
+    <dt>Returns: <code>list</code></dt>
+        <dd>local branches</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_merge_base"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_merge_base</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">commit1</span>,
+        <span class="sig-arg">commit2</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get the common ancestor between two commits</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>commit1</code></strong> (<code>str</code>) - commit SHA1 or name of a branch or tag</li>
+        <li><strong class="pname"><code>commit2</code></strong> (<code>str</code>) - commit SHA1 or name of a branch or tag</li>
+    </ul></dd>
+    <dt>Returns: <code>str</code></dt>
+        <dd>SHA1 of the common ancestor</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_merge_branch"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_merge_branch</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">branch</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get the branch we'd merge from</p>
+  <dl class="fields">
+    <dt>Returns: <code>str</code></dt>
+        <dd>repo and branch we would merge from</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_obj_type"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_obj_type</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">obj</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get type of a git repository object</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>obj</code></strong> (<code>str</code>) - repository object</li>
+    </ul></dd>
+    <dt>Returns: <code>str</code></dt>
+        <dd>type of the repository object</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_remote_branches"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_remote_branches</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get a list of remote branches</p>
+  <dl class="fields">
+    <dt>Returns: <code>list</code></dt>
+        <dd>remote branches</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_remote_repos"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_remote_repos</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get all remote repositories</p>
+  <dl class="fields">
+    <dt>Returns: <code>dict</code> of <code>list</code> of <code>str</code></dt>
+        <dd>remote repositories</dd>
+  </dl>
+<div class="fields">      <p><strong>Deprecated:</strong>
+        Use get_remotes() instead
+      </p>
+</div></td></tr></table>
+</div>
+<a name="get_remotes"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_remotes</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get a list of remote repositories</p>
+  <dl class="fields">
+    <dt>Returns: <code>dict</code> of <code>GitRemote</code></dt>
+        <dd>remote repositories</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_subject"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_subject</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">commit</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Gets the subject of a commit.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>commit</code></strong> - the commit to get the subject from</li>
+    </ul></dd>
+    <dt>Returns: <code>str</code></dt>
+        <dd>the commit's subject</dd>
+  </dl>
+<div class="fields">      <p><strong>Deprecated:</strong>
+        Use get_commit_info directly
+      </p>
+</div></td></tr></table>
+</div>
+<a name="get_submodules"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_submodules</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">treeish</span>,
+        <span class="sig-arg">path</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">recursive</span>=<span class="sig-default">True</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>List the submodules of treeish</p>
+  <dl class="fields">
+    <dt>Returns: list of tuples</dt>
+        <dd>a list of submodule/commit-id tuples</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_tags"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_tags</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">pattern</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>List tags</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>pattern</code></strong> (<code>str</code>) - only list tags matching <i>pattern</i></li>
+    </ul></dd>
+    <dt>Returns: <code>list</code> of <code>str</code></dt>
+        <dd>tags</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_upstream_branch"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_upstream_branch</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">local_branch</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get upstream branch for the local branch</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>local_branch</code></strong> (<code>str</code>) - name fo the local branch</li>
+    </ul></dd>
+    <dt>Returns: <code>str</code></dt>
+        <dd>upstream (remote/branch) or  '' if no upstream found</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="grep_log"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">grep_log</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">regex</span>,
+        <span class="sig-arg">since</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get commmits matching <i>regex</i></p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>regex</code></strong> (<code>str</code>) - regular expression</li>
+        <li><strong class="pname"><code>since</code></strong> (<code>str</code>) - where to start grepping (e.g. a branch)</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="has_branch"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">has_branch</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">branch</span>,
+        <span class="sig-arg">remote</span>=<span class="sig-default">False</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Check if the repository has branch named <i>branch</i>.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>branch</code></strong> - branch to look for</li>
+        <li><strong class="pname"><code>remote</code></strong> (<code>bool</code>) - only look for remote branches</li>
+    </ul></dd>
+    <dt>Returns: <code>bool</code></dt>
+        <dd><code>True</code> if the repository has this branch, 
+          <code>False</code> otherwise</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="has_remote_repo"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">has_remote_repo</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">name</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Do we know about a remote named <i>name</i>?</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>name</code></strong> (<code>str</code>) - name of the remote repository</li>
+    </ul></dd>
+    <dt>Returns: <code>bool</code></dt>
+        <dd><code>True</code> if the remote repositore is known, 
+          <code>False</code> otherwise</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="has_submodules"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">has_submodules</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">treeish</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Does the repo have any submodules?</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>treeish</code></strong> (<code>str</code>) - look into treeish</li>
+    </ul></dd>
+    <dt>Returns: <code>bool</code></dt>
+        <dd><code>True</code> if the repository has any submodules, 
+          <code>False</code> otherwise</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="has_tag"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">has_tag</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">tag</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Check if the repository has a tag named <i>tag</i>.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>tag</code></strong> (<code>str</code>) - tag to look for</li>
+    </ul></dd>
+    <dt>Returns: <code>bool</code></dt>
+        <dd><code>True</code> if the repository has that tag, 
+          <code>False</code> otherwise</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="has_treeish"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">has_treeish</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">treeish</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Check if the repository has the treeish object <i>treeish</i>.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>treeish</code></strong> (<code>str</code>) - treeish object to look for</li>
+    </ul></dd>
+    <dt>Returns: <code>bool</code></dt>
+        <dd><code>True</code> if the repository has that tree, 
+          <code>False</code> otherwise</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="is_clean"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">is_clean</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">ignore_untracked</span>=<span class="sig-default">False</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Does the repository contain any uncommitted modifications?</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>ignore_untracked</code></strong> (<code>bool</code>) - whether to ignore untracked files when checking the repository 
+          status</li>
+    </ul></dd>
+    <dt>Returns: <code>tuple</code></dt>
+        <dd><code>True</code> if the repository is clean, <code>False</code> 
+          otherwise and Git's status message</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="is_empty"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">is_empty</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Is the repository empty?</p>
+  <dl class="fields">
+    <dt>Returns: <code>bool</code></dt>
+        <dd>True if the repositorydoesn't have any commits, False otherwise</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="is_fast_forward"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">is_fast_forward</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">from_branch</span>,
+        <span class="sig-arg">to_branch</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Check if an update <i>from from_branch</i> to <i>to_branch</i> would 
+  be a fast forward or if the branch is up to date already.</p>
+  <dl class="fields">
+    <dt>Returns: <code>tuple</code></dt>
+        <dd>can_fast_forward, up_to_date</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="list_files"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">list_files</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">types</span>=<span class="sig-default"><code class="variable-group">[</code><code class="variable-quote">'</code><code class="variable-string">cached</code><code class="variable-quote">'</code><code class="variable-group">]</code></span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>List files in index and working tree</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>types</code></strong> (<code>list</code>) - list of types to show</li>
+    </ul></dd>
+    <dt>Returns: <code>list</code> of <code>str</code></dt>
+        <dd>list of files</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="list_tree"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">list_tree</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">treeish</span>,
+        <span class="sig-arg">recurse</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">paths</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get a trees content. It returns a list of objects that match the 
+  'ls-tree' output: [ mode, type, sha1, path ].</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>treeish</code></strong> (<code>str</code>) - the treeish object to list</li>
+        <li><strong class="pname"><code>recurse</code></strong> (<code>bool</code>) - whether to list the tree recursively</li>
+    </ul></dd>
+    <dt>Returns: <code>list</code> of objects. See above.</dt>
+        <dd>the tree</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="make_tree"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">make_tree</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">contents</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Create a tree based on contents. <i>contents</i> has the same format 
+  than the <i>GitRepository.list_tree</i> output.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="merge"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">merge</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">commit</span>,
+        <span class="sig-arg">verbose</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">edit</span>=<span class="sig-default">False</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Merge changes from the named commit into the current branch</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>commit</code></strong> (<code>str</code>) - the commit to merge from (usually a branch name or tag)</li>
+        <li><strong class="pname"><code>verbose</code></strong> (<code>bool</code>) - whether to print a summary after the merge</li>
+        <li><strong class="pname"><code>edit</code></strong> (<code>bool</code>) - wheter to invoke an editor to edit the merge message</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="pull"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">pull</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">repo</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">ff_only</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">all_remotes</span>=<span class="sig-default">False</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Fetch and merge from another repository</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>repo</code></strong> (<code>str</code>) - repository to fetch from</li>
+        <li><strong class="pname"><code>ff_only</code></strong> (<code>bool</code>) - only merge if this results in a fast forward merge</li>
+        <li><strong class="pname"><code>all_remotes</code></strong> (<code>bool</code>) - fetch all remotes</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="push"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">push</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">repo</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">src</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">dst</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">ff_only</span>=<span class="sig-default">True</span>,
+        <span class="sig-arg">force</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">tags</span>=<span class="sig-default">False</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Push changes to the remote repo</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>repo</code></strong> (<code>str</code>) - repository to push to</li>
+        <li><strong class="pname"><code>src</code></strong> (<code>str</code>) - the source ref to push</li>
+        <li><strong class="pname"><code>dst</code></strong> (<code>str</code>) - the name of the destination ref to push to</li>
+        <li><strong class="pname"><code>ff_only</code></strong> (<code>bool</code>) - only push if it's a fast forward update</li>
+        <li><strong class="pname"><code>force</code></strong> (<code>bool</code>) - force push, can cause the remote repository to lose commits; use 
+          it with care</li>
+        <li><strong class="pname"><code>tags</code></strong> (<code>bool</code>) - push all refs under refs/tags, in addition to other refs</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="push_tag"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">push_tag</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">repo</span>,
+        <span class="sig-arg">tag</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Push a tag to the remote repo</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>repo</code></strong> (<code>str</code>) - repository to push to</li>
+        <li><strong class="pname"><code>tag</code></strong> (<code>str</code>) - the name of the tag</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="remove_files"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">remove_files</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">paths</span>,
+        <span class="sig-arg">verbose</span>=<span class="sig-default">False</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Remove files from the repository</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>paths</code></strong> - list of files to remove</li>
+        <li><strong class="pname"><code>paths</code></strong> - <code>list</code> or <code>str</code></li>
+        <li><strong class="pname"><code>verbose</code></strong> (<code>bool</code>) - be verbose</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="rename_branch"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">rename_branch</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">branch</span>,
+        <span class="sig-arg">newbranch</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Rename branch</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>branch</code></strong> - name of the branch to be renamed</li>
+        <li><strong class="pname"><code>newbranch</code></strong> - new name of the branch</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="rev_parse"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">rev_parse</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">name</span>,
+        <span class="sig-arg">short</span>=<span class="sig-default">0</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Find the SHA1 of a given name</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>name</code></strong> (<code>str</code>) - the name to look for</li>
+        <li><strong class="pname"><code>short</code></strong> (<code>int</code>) - try to abbreviate SHA1 to given length</li>
+    </ul></dd>
+    <dt>Returns: <code>str</code></dt>
+        <dd>the name's sha1</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="set_branch"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">set_branch</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">branch</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Switch to branch <i>branch</i></p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>branch</code></strong> (<code>str</code>) - name of the branch to switch to</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="set_upstream_branch"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">set_upstream_branch</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">local_branch</span>,
+        <span class="sig-arg">upstream</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Set upstream branches for local branch</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>local_branch</code></strong> (<code>str</code>) - name of the local branch</li>
+        <li><strong class="pname"><code>upstream</code></strong> (<code>str</code>) - remote/branch, for example origin/master</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="status"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">status</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">pathlist</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Check status of repository.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>pathlist</code></strong> (<code>list</code> @return <code>dict</code> of <code>lists</code>
+          of paths, where key is a git status flag. @rtype 
+          <code>dict</code>) - List of paths to check status for</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="strip_sha1"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">strip_sha1</span>(<span class="sig-arg">sha1</span>,
+        <span class="sig-arg">length</span>=<span class="sig-default">0</span>)</span>
+    <br /><em class="fname">Static Method</em>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Strip a given sha1 and check if the resulting hash has the expected 
+  length.</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>GitRepository.strip_sha1(<span class="py-string">'  58ef37dbeb12c44b206b92f746385a6f61253c0a\n'</span>)
+<span class="py-output">'58ef37dbeb12c44b206b92f746385a6f61253c0a'</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>GitRepository.strip_sha1(<span class="py-string">'58ef37d'</span>, 10)
+<span class="py-except">Traceback (most recent call last):</span>
+<span class="py-except">...</span>
+<span class="py-except">GitRepositoryError: '58ef37d' is not a valid sha1 of length 10</span>
+<span class="py-except"></span><span class="py-prompt">&gt;&gt;&gt; </span>GitRepository.strip_sha1(<span class="py-string">'58ef37d'</span>, 7)
+<span class="py-output">'58ef37d'</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>GitRepository.strip_sha1(<span class="py-string">'123456789'</span>, 7)
+<span class="py-output">'123456789'</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>GitRepository.strip_sha1(<span class="py-string">'foobar'</span>)
+<span class="py-except">Traceback (most recent call last):</span>
+<span class="py-except">...</span>
+<span class="py-except">GitRepositoryError: 'foobar' is not a valid sha1</span></pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="update_ref"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">update_ref</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">ref</span>,
+        <span class="sig-arg">new</span>,
+        <span class="sig-arg">old</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">msg</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Update ref <i>ref</i> to commit <i>new</i> if <i>ref</i> currently 
+  points to <i>old</i></p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>ref</code></strong> (<code>str</code>) - the ref to update</li>
+        <li><strong class="pname"><code>new</code></strong> (<code>str</code>) - the new value for ref</li>
+        <li><strong class="pname"><code>old</code></strong> (<code>str</code>) - the old value of ref</li>
+        <li><strong class="pname"><code>msg</code></strong> (<code>str</code>) - the reason for the update</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="update_submodules"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">update_submodules</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">init</span>=<span class="sig-default">True</span>,
+        <span class="sig-arg">recursive</span>=<span class="sig-default">True</span>,
+        <span class="sig-arg">fetch</span>=<span class="sig-default">False</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Update all submodules</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>init</code></strong> (<code>bool</code>) - whether to initialize the submodule if necessary</li>
+        <li><strong class="pname"><code>recursive</code></strong> (<code>bool</code>) - whether to update submodules recursively</li>
+        <li><strong class="pname"><code>fetch</code></strong> (<code>bool</code>) - whether to fetch new objects</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="verify_tag"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">verify_tag</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">tag</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Verify a signed tag</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>tag</code></strong> (<code>str</code>) - the tag's name</li>
+    </ul></dd>
+    <dt>Returns: <code>bool</code></dt>
+        <dd>Whether the signature on the tag could be verified</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="write_file"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">write_file</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">filename</span>,
+        <span class="sig-arg">filters</span>=<span class="sig-default">True</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Hash a single file and write it into the object database</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>filename</code></strong> (<code>str</code>) - the filename to the content of the file to hash</li>
+        <li><strong class="pname"><code>filters</code></strong> (<code>bool</code>) - whether to run filters</li>
+    </ul></dd>
+    <dt>Returns: <code>str</code></dt>
+        <dd>the hash of the file</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="write_tree"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">write_tree</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">index_file</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Create a tree object from the current index</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>index_file</code></strong> (<code>str</code>) - alternate index file to read changes from</li>
+    </ul></dd>
+    <dt>Returns: <code>str</code></dt>
+        <dd>the new tree object's sha1</dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== PROPERTY DETAILS ==================== -->
+<a name="section-PropertyDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Property Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-PropertyDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="bare"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">bare</h3>
+  <p>Wheter this is a bare repository</p>
+  <dl class="fields">
+    <dt>Get Method:</dt>
+    <dd class="value"><span class="summary-sig"><i>unreachable</i>.bare(<span class="summary-sig-arg">self</span>)</span>
+        - Wheter this is a bare repository
+    </dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="branch"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">branch</h3>
+  <p>The currently checked out branch</p>
+  <dl class="fields">
+    <dt>Get Method:</dt>
+    <dd class="value"><span class="summary-sig"><i>unreachable</i>.branch(<span class="summary-sig-arg">self</span>)</span>
+        - The currently checked out branch
+    </dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="git_dir"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">git_dir</h3>
+  <p>The absolute path to git's metadata</p>
+  <dl class="fields">
+    <dt>Get Method:</dt>
+    <dd class="value"><span class="summary-sig"><i>unreachable</i>.git_dir(<span class="summary-sig-arg">self</span>)</span>
+        - The absolute path to git's metadata
+    </dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="head"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">head</h3>
+  <p>return the SHA1 of the current HEAD</p>
+  <dl class="fields">
+    <dt>Get Method:</dt>
+    <dd class="value"><span class="summary-sig"><i>unreachable</i>.head(<span class="summary-sig-arg">self</span>)</span>
+        - return the SHA1 of the current HEAD
+    </dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="path"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">path</h3>
+  <p>The absolute path to the repository</p>
+  <dl class="fields">
+    <dt>Get Method:</dt>
+    <dd class="value"><span class="summary-sig"><i>unreachable</i>.path(<span class="summary-sig-arg">self</span>)</span>
+        - The absolute path to the repository
+    </dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="tags"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">tags</h3>
+  <p>List of all tags in the repository</p>
+  <dl class="fields">
+    <dt>Get Method:</dt>
+    <dd class="value"><span class="summary-sig"><i>unreachable</i>.tags(<span class="summary-sig-arg">self</span>)</span>
+        - List of all tags in the repository
+    </dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="gbp-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >git-buildpackage</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Mon Nov 10 08:14:14 2014
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

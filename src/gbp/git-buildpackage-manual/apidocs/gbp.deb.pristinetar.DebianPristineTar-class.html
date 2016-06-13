@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>gbp.deb.pristinetar.DebianPristineTar</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="gbp-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >git-buildpackage</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="gbp-module.html">Package&nbsp;gbp</a> ::
+        <a href="gbp.deb-module.html">Package&nbsp;deb</a> ::
+        <a href="gbp.deb.pristinetar-module.html">Module&nbsp;pristinetar</a> ::
+        Class&nbsp;DebianPristineTar
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="gbp.deb.pristinetar.DebianPristineTar-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class DebianPristineTar</h1><p class="nomargin-top"></p>
+<pre class="base-tree">
+              object --+        
+                       |        
+<a href="gbp.command_wrappers.Command-class.html">command_wrappers.Command</a> --+    
+                           |    
+ <a href="gbp.pkg.pristinetar.PristineTar-class.html">pkg.pristinetar.PristineTar</a> --+
+                               |
+                              <strong class="uidshort">DebianPristineTar</strong>
+</pre>
+
+<hr />
+<p>The pristine-tar branch in a Debian git repository</p>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.deb.pristinetar.DebianPristineTar-class.html#has_commit" class="summary-sig-name">has_commit</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">package</span>,
+        <span class="summary-sig-arg">version</span>,
+        <span class="summary-sig-arg">comp_type</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Do we have a pristine-tar commit for package <i>package</i> at 
+      version {version} with compression type <i>comp_type</i>?</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.deb.pristinetar.DebianPristineTar-class.html#checkout" class="summary-sig-name">checkout</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">package</span>,
+        <span class="summary-sig-arg">version</span>,
+        <span class="summary-sig-arg">comp_type</span>,
+        <span class="summary-sig-arg">output_dir</span>)</span><br />
+      Checkout the orig tarball for package <i>package</i> of 
+      <i>version</i> and compression type <i>comp_type</i> to 
+      <i>output_dir</i></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="gbp.pkg.pristinetar.PristineTar-class.html">pkg.pristinetar.PristineTar</a></code></b>:
+      <code><a href="gbp.pkg.pristinetar.PristineTar-class.html#__init__">__init__</a></code>,
+      <code><a href="gbp.pkg.pristinetar.PristineTar-class.html#commit">commit</a></code>,
+      <code><a href="gbp.pkg.pristinetar.PristineTar-class.html#get_commit">get_commit</a></code>
+      </p>
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="gbp.command_wrappers.Command-class.html">command_wrappers.Command</a></code></b>:
+      <code><a href="gbp.command_wrappers.Command-class.html#__call__">__call__</a></code>,
+      <code><a href="gbp.command_wrappers.Command-class.html#call">call</a></code>
+      </p>
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__delattr__</code>,
+      <code>__format__</code>,
+      <code>__getattribute__</code>,
+      <code>__hash__</code>,
+      <code>__new__</code>,
+      <code>__reduce__</code>,
+      <code>__reduce_ex__</code>,
+      <code>__repr__</code>,
+      <code>__setattr__</code>,
+      <code>__sizeof__</code>,
+      <code>__str__</code>,
+      <code>__subclasshook__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS VARIABLES ==================== -->
+<a name="section-ClassVariables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Class Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-ClassVariables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="gbp.pkg.pristinetar.PristineTar-class.html">pkg.pristinetar.PristineTar</a></code></b>:
+      <code><a href="gbp.pkg.pristinetar.PristineTar-class.html#branch">branch</a></code>,
+      <code><a href="gbp.pkg.pristinetar.PristineTar-class.html#cmd">cmd</a></code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== PROPERTIES ==================== -->
+<a name="section-Properties"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Properties</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Properties"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__class__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Method Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-MethodDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="has_commit"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">has_commit</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">package</span>,
+        <span class="sig-arg">version</span>,
+        <span class="sig-arg">comp_type</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Do we have a pristine-tar commit for package <i>package</i> at version
+  {version} with compression type <i>comp_type</i>?</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>package</code></strong> (<code>str</code>) - the package to look for</li>
+        <li><strong class="pname"><code>version</code></strong> (<code>str</code>) - the upstream version to look for</li>
+        <li><strong class="pname"><code>comp_type</code></strong> (<code>str</code>) - the compression type</li>
+    </ul></dd>
+    <dt>Overrides:
+        <a href="gbp.pkg.pristinetar.PristineTar-class.html#has_commit">pkg.pristinetar.PristineTar.has_commit</a>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="checkout"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">checkout</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">package</span>,
+        <span class="sig-arg">version</span>,
+        <span class="sig-arg">comp_type</span>,
+        <span class="sig-arg">output_dir</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Checkout the orig tarball for package <i>package</i> of <i>version</i>
+  and compression type <i>comp_type</i> to <i>output_dir</i></p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>package</code></strong> (<code>str</code>) - the package to generate the orig tarball for</li>
+        <li><strong class="pname"><code>version</code></strong> (<code>str</code>) - the version to check generate the orig tarball for</li>
+        <li><strong class="pname"><code>comp_type</code></strong> (<code>str</code>) - the compression type of the tarball</li>
+        <li><strong class="pname"><code>output_dir</code></strong> (<code>str</code>) - the directory to put the tarball into</li>
+    </ul></dd>
+    <dt>Overrides:
+        <a href="gbp.pkg.pristinetar.PristineTar-class.html#checkout">pkg.pristinetar.PristineTar.checkout</a>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="gbp-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >git-buildpackage</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Mon Nov 10 08:14:14 2014
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>
