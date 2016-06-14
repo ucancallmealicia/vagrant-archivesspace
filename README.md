@@ -6,6 +6,7 @@ Vagrant installer for archivesspace
 1.  [Overview] (#overview)
 2.  [Pre-installation] (#pre-installation)
 3.  [Installation] (#installation)
+5.  [Usage] (#usage)
 
 
 #### Overview
@@ -51,23 +52,27 @@ http://127.0.0.1:8180 and shen archivesspace has completed its
 startup process you connect to thi frontend.
 
 
-# The gory details
+### Usage
 
-This will install the latest version of Archivesspace in a Virtualbox VM 
-running Centos 6.7 and mysql.  The passwords for the mysql 
-"root" and "asdb" users have been set to "vagrant".
+Vagrant-archivesspace will install the latest version of Archivesspace 
+on a Virtualbox VM running Centos 6.7 and mysql.  The passwords for
+mysql "root" and "asdb" users have been set to "vagrant".
 
 The archivesspace ports have been mapped in the following way,
 
-> frontend   8080 => 127.0.0.1:8180
+> frontend   8080 => 127.0.0.1:9180
 
-> public     8081 => 127.0.0.1:8181
+> public     8081 => 127.0.0.1:9181
 
-> backend    8089 => 127.0.0.1:8189
+> backend    8089 => 127.0.0.1:9189
 
-> solr       8090 => 127.0.0.1:8190
+> solr       8090 => 127.0.0.1:9190
 
-> indexer    8091 => 127.0.0.1:8191
+> indexer    8091 => 127.0.0.1:9191
+
+Also, the VM has two NICs, the second of which is a "host only adapter"
+with an ip address of 192.168.90.80.  To connect locally archivesspace 
+from your workstation go to http://192.168.90.80:8080.
 
 Once the VM is running you can connect to the box by running
 
@@ -76,5 +81,16 @@ Once the VM is running you can connect to the box by running
 At this point you will be logged in as the vagrant user, which
 has passwordless sudo access.
 
-Archivesspace is installed in /opt/archivesspace
+Archivesspace is installed in /opt/archivesspace.  Archivesspace-vagrant
+uses puppet to provision the VM.  By default it will install the latest
+available version. If you would like to intall a different virsion of 
+archivesspace, from the vagrant-archivesspace reposiroty, edit
+puppet/hieradata/common.yaml and change the value of  
+archivesspace::version: 'latest'
+to the version of archivesspace that you want to install.
+
+To find a list of available versions ayou can do the following,
+
+    $ vagrant ssh
+    $ yum --showduplicates list archivesspace
 
