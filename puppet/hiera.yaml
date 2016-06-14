@@ -1,12 +1,12 @@
----
-:backends:
-  - yaml
-
-:hierarchy:
-  - "common"
-  - "accounts"
-
+<<<<<<< HEAD
 :logger: console
 
+:hierarchy:
+  - "%{environment}/%{calling_class}"
+  - "%{environment}"
+  - accounts
+  - common
+
 :yaml:
-  :datadir: /vagrant/hieradata
+  #:datadir: "%{settings::manifestdir}/hieradata"
+  :datadir: "/vagrant/puppet/hieradata"

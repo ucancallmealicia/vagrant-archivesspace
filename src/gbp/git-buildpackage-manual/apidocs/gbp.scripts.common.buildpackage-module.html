@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>gbp.scripts.common.buildpackage</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="gbp-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >git-buildpackage</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="gbp-module.html">Package&nbsp;gbp</a> ::
+        <a href="gbp.scripts-module.html">Package&nbsp;scripts</a> ::
+        <a href="gbp.scripts.common-module.html">Package&nbsp;common</a> ::
+        Module&nbsp;buildpackage
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="gbp.scripts.common.buildpackage-module.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== MODULE DESCRIPTION ==================== -->
+<h1 class="epydoc">Module buildpackage</h1><p class="nomargin-top"></p>
+<p>Common functionality for Debian and RPM buildpackage scripts</p>
+
+<!-- ==================== FUNCTIONS ==================== -->
+<a name="section-Functions"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Functions</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Functions"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.scripts.common.buildpackage-module.html#sanitize_prefix" class="summary-sig-name">sanitize_prefix</a>(<span class="summary-sig-arg">prefix</span>)</span><br />
+      Sanitize the prefix used for generating source archives</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.scripts.common.buildpackage-module.html#compress" class="summary-sig-name">compress</a>(<span class="summary-sig-arg">cmd</span>,
+        <span class="summary-sig-arg">options</span>,
+        <span class="summary-sig-arg">output</span>,
+        <span class="summary-sig-arg">input_data</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Filter data through a compressor cmd.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.scripts.common.buildpackage-module.html#git_archive_submodules" class="summary-sig-name">git_archive_submodules</a>(<span class="summary-sig-arg">repo</span>,
+        <span class="summary-sig-arg">treeish</span>,
+        <span class="summary-sig-arg">output</span>,
+        <span class="summary-sig-arg">tmpdir_base</span>,
+        <span class="summary-sig-arg">prefix</span>,
+        <span class="summary-sig-arg">comp_type</span>,
+        <span class="summary-sig-arg">comp_level</span>,
+        <span class="summary-sig-arg">comp_opts</span>,
+        <span class="summary-sig-arg">format</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">tar</code><code class="variable-quote">'</code></span>)</span><br />
+      Create a source tree archive with submodules.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.scripts.common.buildpackage-module.html#git_archive_single" class="summary-sig-name">git_archive_single</a>(<span class="summary-sig-arg">repo</span>,
+        <span class="summary-sig-arg">treeish</span>,
+        <span class="summary-sig-arg">output</span>,
+        <span class="summary-sig-arg">prefix</span>,
+        <span class="summary-sig-arg">comp_type</span>,
+        <span class="summary-sig-arg">comp_level</span>,
+        <span class="summary-sig-arg">comp_opts</span>,
+        <span class="summary-sig-arg">format</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">tar</code><code class="variable-quote">'</code></span>)</span><br />
+      Create an archive without submodules</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="untar_data"></a><span class="summary-sig-name">untar_data</span>(<span class="summary-sig-arg">outdir</span>,
+        <span class="summary-sig-arg">data</span>)</span><br />
+      Extract tar provided as an iterable</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Functions to handle export-dir</th></tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="dump_tree"></a><span class="summary-sig-name">dump_tree</span>(<span class="summary-sig-arg">repo</span>,
+        <span class="summary-sig-arg">export_dir</span>,
+        <span class="summary-sig-arg">treeish</span>,
+        <span class="summary-sig-arg">with_submodules</span>,
+        <span class="summary-sig-arg">recursive</span>=<span class="summary-sig-default">True</span>)</span><br />
+      Dump a git tree-ish to output_dir</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="wc_index"></a><span class="summary-sig-name">wc_index</span>(<span class="summary-sig-arg">repo</span>)</span><br />
+      Get path of the temporary index file used for exporting working copy</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="write_wc"></a><span class="summary-sig-name">write_wc</span>(<span class="summary-sig-arg">repo</span>,
+        <span class="summary-sig-arg">force</span>=<span class="summary-sig-default">True</span>,
+        <span class="summary-sig-arg">untracked</span>=<span class="summary-sig-default">True</span>)</span><br />
+      write out the current working copy as a treeish object</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="drop_index"></a><span class="summary-sig-name">drop_index</span>(<span class="summary-sig-arg">repo</span>)</span><br />
+      drop our custom index</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="clone_index"></a><span class="summary-sig-name">clone_index</span>(<span class="summary-sig-arg">repo</span>)</span><br />
+      Copy the current index file to our custom index file</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== VARIABLES ==================== -->
+<a name="section-Variables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Variables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="index_name"></a><span class="summary-name">index_name</span> = <code title="'INDEX'"><code class="variable-quote">'</code><code class="variable-string">INDEX</code><code class="variable-quote">'</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="gbp.scripts.common.buildpackage-module.html#wc_names" class="summary-name">wc_names</a> = <code title="{'WC': {'force': True, 'untracked': True},
+ 'WC.IGNORED': {'force': True, 'untracked': True},
+ 'WC.TRACKED': {'force': False, 'untracked': False},
+ 'WC.UNTRACKED': {'force': False, 'untracked': True}}"><code class="variable-group">{</code><code class="variable-quote">'</code><code class="variable-string">WC</code><code class="variable-quote">'</code><code class="variable-op">: </code><code class="variable-group">{</code><code class="variable-quote">'</code><code class="variable-string">force</code><code class="variable-quote">'</code><code class="variable-op">: </code>True<code class="variable-op">, </code><code class="variable-quote">'</code><code class="variable-string">untracked</code><code class="variable-quote">'</code><code class="variable-op">: </code>True<code class="variable-group">}</code><code class="variable-op">, </code><code class="variable-quote">'</code><code class="variable-string">WC.IGNO</code><code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="__package__"></a><span class="summary-name">__package__</span> = <code title="'gbp.scripts.common'"><code class="variable-quote">'</code><code class="variable-string">gbp.scripts.common</code><code class="variable-quote">'</code></code>
+    </td>
+  </tr>
+</table>
+<!-- ==================== FUNCTION DETAILS ==================== -->
+<a name="section-FunctionDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Function Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-FunctionDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="sanitize_prefix"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">sanitize_prefix</span>(<span class="sig-arg">prefix</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Sanitize the prefix used for generating source archives</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>sanitize_prefix(<span class="py-string">''</span>)
+<span class="py-output">'/'</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>sanitize_prefix(<span class="py-string">'foo/'</span>)
+<span class="py-output">'foo/'</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>sanitize_prefix(<span class="py-string">'/foo/bar'</span>)
+<span class="py-output">'foo/bar/'</span></pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="compress"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">compress</span>(<span class="sig-arg">cmd</span>,
+        <span class="sig-arg">options</span>,
+        <span class="sig-arg">output</span>,
+        <span class="sig-arg">input_data</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Filter data through a compressor cmd.</p>
+  <p>For better performance input_data should feed data in bigger 
+  chunks.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="git_archive_submodules"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">git_archive_submodules</span>(<span class="sig-arg">repo</span>,
+        <span class="sig-arg">treeish</span>,
+        <span class="sig-arg">output</span>,
+        <span class="sig-arg">tmpdir_base</span>,
+        <span class="sig-arg">prefix</span>,
+        <span class="sig-arg">comp_type</span>,
+        <span class="sig-arg">comp_level</span>,
+        <span class="sig-arg">comp_opts</span>,
+        <span class="sig-arg">format</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">tar</code><code class="variable-quote">'</code></span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Create a source tree archive with submodules.</p>
+  <p>Since git-archive always writes an end of tarfile trailer we 
+  concatenate the generated archives using tar and compress the result.</p>
+  <p>Exception handling is left to the caller.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="git_archive_single"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">git_archive_single</span>(<span class="sig-arg">repo</span>,
+        <span class="sig-arg">treeish</span>,
+        <span class="sig-arg">output</span>,
+        <span class="sig-arg">prefix</span>,
+        <span class="sig-arg">comp_type</span>,
+        <span class="sig-arg">comp_level</span>,
+        <span class="sig-arg">comp_opts</span>,
+        <span class="sig-arg">format</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">tar</code><code class="variable-quote">'</code></span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Create an archive without submodules</p>
+  <p>Exception handling is left to the caller.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== VARIABLES DETAILS ==================== -->
+<a name="section-VariablesDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Variables Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-VariablesDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="wc_names"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">wc_names</h3>
+  
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+<code class="variable-group">{</code><code class="variable-quote">'</code><code class="variable-string">WC</code><code class="variable-quote">'</code><code class="variable-op">: </code><code class="variable-group">{</code><code class="variable-quote">'</code><code class="variable-string">force</code><code class="variable-quote">'</code><code class="variable-op">: </code>True<code class="variable-op">, </code><code class="variable-quote">'</code><code class="variable-string">untracked</code><code class="variable-quote">'</code><code class="variable-op">: </code>True<code class="variable-group">}</code><code class="variable-op">,</code>
+ <code class="variable-quote">'</code><code class="variable-string">WC.IGNORED</code><code class="variable-quote">'</code><code class="variable-op">: </code><code class="variable-group">{</code><code class="variable-quote">'</code><code class="variable-string">force</code><code class="variable-quote">'</code><code class="variable-op">: </code>True<code class="variable-op">, </code><code class="variable-quote">'</code><code class="variable-string">untracked</code><code class="variable-quote">'</code><code class="variable-op">: </code>True<code class="variable-group">}</code><code class="variable-op">,</code>
+ <code class="variable-quote">'</code><code class="variable-string">WC.TRACKED</code><code class="variable-quote">'</code><code class="variable-op">: </code><code class="variable-group">{</code><code class="variable-quote">'</code><code class="variable-string">force</code><code class="variable-quote">'</code><code class="variable-op">: </code>False<code class="variable-op">, </code><code class="variable-quote">'</code><code class="variable-string">untracked</code><code class="variable-quote">'</code><code class="variable-op">: </code>False<code class="variable-group">}</code><code class="variable-op">,</code>
+ <code class="variable-quote">'</code><code class="variable-string">WC.UNTRACKED</code><code class="variable-quote">'</code><code class="variable-op">: </code><code class="variable-group">{</code><code class="variable-quote">'</code><code class="variable-string">force</code><code class="variable-quote">'</code><code class="variable-op">: </code>False<code class="variable-op">, </code><code class="variable-quote">'</code><code class="variable-string">untracked</code><code class="variable-quote">'</code><code class="variable-op">: </code>True<code class="variable-group">}</code><code class="variable-group">}</code>
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="gbp-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >git-buildpackage</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Mon Nov 10 08:14:14 2014
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

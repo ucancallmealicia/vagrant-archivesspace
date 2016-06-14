@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>gbp.rpm.git.RpmGitRepository</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="gbp-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >git-buildpackage</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="gbp-module.html">Package&nbsp;gbp</a> ::
+        <a href="gbp.rpm-module.html">Package&nbsp;rpm</a> ::
+        <a href="gbp.rpm.git-module.html">Module&nbsp;git</a> ::
+        Class&nbsp;RpmGitRepository
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="gbp.rpm.git.RpmGitRepository-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class RpmGitRepository</h1><p class="nomargin-top"></p>
+<pre class="base-tree">
+                  object --+    
+                           |    
+<a href="gbp.git.repository.GitRepository-class.html">git.repository.GitRepository</a> --+
+                               |
+                              <strong class="uidshort">RpmGitRepository</strong>
+</pre>
+
+<hr />
+<p>A git repository that holds the source of an RPM package</p>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.rpm.git.RpmGitRepository-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">path</span>)</span><br />
+      x.__init__(...) initializes x; see x.__class__.__doc__ for signature</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.rpm.git.RpmGitRepository-class.html#find_version" class="summary-sig-name">find_version</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">format</span>,
+        <span class="summary-sig-arg">str_fields</span>)</span><br />
+      Check if a certain version is stored in this repo and return the SHA1
+      of the related commit.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.rpm.git.RpmGitRepository-class.html#pristine_tar_branch" class="summary-sig-name">pristine_tar_branch</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      The name of the pristine-tar branch, whether it already exists or 
+      not.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>Bool</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.rpm.git.RpmGitRepository-class.html#has_pristine_tar_branch" class="summary-sig-name">has_pristine_tar_branch</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Wheter the repo has a <i>pristine-tar</i> branch.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="gbp.git.repository.GitRepository-class.html">git.repository.GitRepository</a></code></b>:
+      <code><a href="gbp.git.repository.GitRepository-class.html#archive">archive</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#clean">clean</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#collect_garbage">collect_garbage</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#force_head">force_head</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#get_author_info">get_author_info</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#get_config">get_config</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#is_clean">is_clean</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#is_empty">is_empty</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#rev_parse">rev_parse</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#status">status</a></code>
+      </p>
+    <div class="private">    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="gbp.git.repository.GitRepository-class.html">git.repository.GitRepository</a></code></b> (private):
+      <code><a href="gbp.git.repository.GitRepository-class.html#_check_dirs" onclick="show_private();">_check_dirs</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#_cmd_has_feature" onclick="show_private();">_cmd_has_feature</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#_git_command" onclick="show_private();">_git_command</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#_git_getoutput" onclick="show_private();">_git_getoutput</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#_git_inout" onclick="show_private();">_git_inout</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#_git_inout2" onclick="show_private();">_git_inout2</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#_status" onclick="show_private();">_status</a></code>
+      </p></div>
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__delattr__</code>,
+      <code>__format__</code>,
+      <code>__getattribute__</code>,
+      <code>__hash__</code>,
+      <code>__new__</code>,
+      <code>__reduce__</code>,
+      <code>__reduce_ex__</code>,
+      <code>__repr__</code>,
+      <code>__setattr__</code>,
+      <code>__sizeof__</code>,
+      <code>__str__</code>,
+      <code>__subclasshook__</code>
+      </p>
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Branches and Merging</th></tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="gbp.git.repository.GitRepository-class.html">git.repository.GitRepository</a></code></b>:
+      <code><a href="gbp.git.repository.GitRepository-class.html#branch_contains">branch_contains</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#create_branch">create_branch</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#delete_branch">delete_branch</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#get_branch">get_branch</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#get_local_branches">get_local_branches</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#get_merge_base">get_merge_base</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#get_merge_branch">get_merge_branch</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#get_remote_branches">get_remote_branches</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#get_upstream_branch">get_upstream_branch</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#has_branch">has_branch</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#is_fast_forward">is_fast_forward</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#merge">merge</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#rename_branch">rename_branch</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#set_branch">set_branch</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#set_upstream_branch">set_upstream_branch</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#update_ref">update_ref</a></code>
+      </p>
+    <div class="private">    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="gbp.git.repository.GitRepository-class.html">git.repository.GitRepository</a></code></b> (private):
+      <code><a href="gbp.git.repository.GitRepository-class.html#_get_branches" onclick="show_private();">_get_branches</a></code>
+      </p></div>
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Tags</th></tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="gbp.git.repository.GitRepository-class.html">git.repository.GitRepository</a></code></b>:
+      <code><a href="gbp.git.repository.GitRepository-class.html#create_tag">create_tag</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#delete_tag">delete_tag</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#describe">describe</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#find_tag">find_tag</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#get_tags">get_tags</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#has_tag">has_tag</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#move_tag">move_tag</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#verify_tag">verify_tag</a></code>
+      </p>
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Trees</th></tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="gbp.git.repository.GitRepository-class.html">git.repository.GitRepository</a></code></b>:
+      <code><a href="gbp.git.repository.GitRepository-class.html#checkout">checkout</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#get_obj_type">get_obj_type</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#has_treeish">has_treeish</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#list_tree">list_tree</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#make_tree">make_tree</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#write_tree">write_tree</a></code>
+      </p>
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Remote Repositories</th></tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="gbp.git.repository.GitRepository-class.html">git.repository.GitRepository</a></code></b>:
+      <code><a href="gbp.git.repository.GitRepository-class.html#add_remote_repo">add_remote_repo</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#fetch">fetch</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#get_remote_repos">get_remote_repos</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#get_remotes">get_remotes</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#has_remote_repo">has_remote_repo</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#pull">pull</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#push">push</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#push_tag">push_tag</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#remove_remote_repo">remove_remote_repo</a></code>
+      </p>
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Files</th></tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="gbp.git.repository.GitRepository-class.html">git.repository.GitRepository</a></code></b>:
+      <code><a href="gbp.git.repository.GitRepository-class.html#add_files">add_files</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#list_files">list_files</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#remove_files">remove_files</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#write_file">write_file</a></code>
+      </p>
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Comitting</th></tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="gbp.git.repository.GitRepository-class.html">git.repository.GitRepository</a></code></b>:
+      <code><a href="gbp.git.repository.GitRepository-class.html#commit_all">commit_all</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#commit_dir">commit_dir</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#commit_files">commit_files</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#commit_staged">commit_staged</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#commit_tree">commit_tree</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#create_tree">create_tree</a></code>
+      </p>
+    <div class="private">    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="gbp.git.repository.GitRepository-class.html">git.repository.GitRepository</a></code></b> (private):
+      <code><a href="gbp.git.repository.GitRepository-class.html#_commit" onclick="show_private();">_commit</a></code>
+      </p></div>
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Commit Information</th></tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="gbp.git.repository.GitRepository-class.html">git.repository.GitRepository</a></code></b>:
+      <code><a href="gbp.git.repository.GitRepository-class.html#get_commit_info">get_commit_info</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#get_commits">get_commits</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#get_subject">get_subject</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#grep_log">grep_log</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#show">show</a></code>
+      </p>
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Patches</th></tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="gbp.git.repository.GitRepository-class.html">git.repository.GitRepository</a></code></b>:
+      <code><a href="gbp.git.repository.GitRepository-class.html#apply_patch">apply_patch</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#diff">diff</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#diff_status">diff_status</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#format_patches">format_patches</a></code>
+      </p>
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Submodules</th></tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="gbp.git.repository.GitRepository-class.html">git.repository.GitRepository</a></code></b>:
+      <code><a href="gbp.git.repository.GitRepository-class.html#add_submodule">add_submodule</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#get_submodules">get_submodules</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#has_submodules">has_submodules</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#update_submodules">update_submodules</a></code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS METHODS ==================== -->
+<a name="section-ClassMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Class Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-ClassMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Repository Creation</th></tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="gbp.git.repository.GitRepository-class.html">git.repository.GitRepository</a></code></b>:
+      <code><a href="gbp.git.repository.GitRepository-class.html#clone">clone</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#create">create</a></code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== STATIC METHODS ==================== -->
+<a name="section-StaticMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Static Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-StaticMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.rpm.git.RpmGitRepository-class.html#version_to_tag" class="summary-sig-name">version_to_tag</a>(<span class="summary-sig-arg">format</span>,
+        <span class="summary-sig-arg">str_fields</span>)</span><br />
+      Generate a tag from a given format and a version</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.rpm.git.RpmGitRepository-class.html#_sanitize_tag" class="summary-sig-name" onclick="show_private();">_sanitize_tag</a>(<span class="summary-sig-arg">tag</span>)</span><br />
+      sanitize a version so git accepts it as a tag</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="gbp.git.repository.GitRepository-class.html">git.repository.GitRepository</a></code></b>:
+      <code><a href="gbp.git.repository.GitRepository-class.html#strip_sha1">strip_sha1</a></code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== INSTANCE VARIABLES ==================== -->
+<a name="section-InstanceVariables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceVariables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <div class="private">    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="gbp.git.repository.GitRepository-class.html">git.repository.GitRepository</a></code></b> (private):
+      <code><a href="gbp.git.repository.GitRepository-class.html#_bare" onclick="show_private();">_bare</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#_path" onclick="show_private();">_path</a></code>
+      </p></div>
+    </td>
+  </tr>
+</table>
+<!-- ==================== PROPERTIES ==================== -->
+<a name="section-Properties"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Properties</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Properties"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="gbp.git.repository.GitRepository-class.html">git.repository.GitRepository</a></code></b>:
+      <code><a href="gbp.git.repository.GitRepository-class.html#bare">bare</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#branch">branch</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#git_dir">git_dir</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#head">head</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#path">path</a></code>,
+      <code><a href="gbp.git.repository.GitRepository-class.html#tags">tags</a></code>
+      </p>
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__class__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Method Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-MethodDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="__init__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">path</span>)</span>
+    <br /><em class="fname">(Constructor)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>x.__init__(...) initializes x; see x.__class__.__doc__ for 
+  signature</p>
+  <dl class="fields">
+    <dt>Raises:</dt>
+    <dd><ul class="nomargin-top">
+        <li><code><strong class='fraise'><a href="gbp.git.repository.GitRepositoryError-class.html">GitRepositoryError</a></strong></code> - on git errors GitRepositoryError is raised by all methods.</li>
+    </ul></dd>
+    <dt>Overrides:
+        object.__init__
+        <dd><em class="note">(inherited documentation)</em></dd>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="find_version"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">find_version</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">format</span>,
+        <span class="sig-arg">str_fields</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Check if a certain version is stored in this repo and return the SHA1 
+  of the related commit. That is, an annotated tag is dereferenced to the 
+  commit object it points to.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>format</code></strong> (<code>str</code>) - tag pattern</li>
+        <li><strong class="pname"><code>str_fields</code></strong> (<code>dict</code> of <code>str</code>) - arguments for format string ('upstreamversion', 'release', 
+          'vendor'...)</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>sha1 of the commit the tag references to</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="version_to_tag"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">version_to_tag</span>(<span class="sig-arg">format</span>,
+        <span class="sig-arg">str_fields</span>)</span>
+    <br /><em class="fname">Static Method</em>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Generate a tag from a given format and a version</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>format</code></strong> (<code>str</code>) - tag pattern</li>
+        <li><strong class="pname"><code>str_fields</code></strong> (<code>dict</code> of <code>str</code>) - arguments for format string ('upstreamversion', 'release', 
+          'vendor'...)</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>version tag
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>RpmGitRepository.version_to_tag(<span class="py-string">&quot;packaging/%(version)s&quot;</span>, dict(epoch=<span class="py-string">'0'</span>, upstreamversion=<span class="py-string">'0~0'</span>))
+<span class="py-output">'packaging/0%0_0'</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>RpmGitRepository.version_to_tag(<span class="py-string">&quot;%(vendor)s/v%(version)s&quot;</span>, dict(upstreamversion=<span class="py-string">'1.0'</span>, release=<span class="py-string">'2'</span>, vendor=<span class="py-string">&quot;myvendor&quot;</span>))
+<span class="py-output">'myvendor/v1.0-2'</span></pre></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="_sanitize_tag"></a>
+<div class="private">
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">_sanitize_tag</span>(<span class="sig-arg">tag</span>)</span>
+    <br /><em class="fname">Static Method</em>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>sanitize a version so git accepts it as a tag</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>RpmGitRepository._sanitize_tag(<span class="py-string">&quot;0.0.0&quot;</span>)
+<span class="py-output">'0.0.0'</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>RpmGitRepository._sanitize_tag(<span class="py-string">&quot;0.0~0&quot;</span>)
+<span class="py-output">'0.0_0'</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>RpmGitRepository._sanitize_tag(<span class="py-string">&quot;0:0.0&quot;</span>)
+<span class="py-output">'0%0.0'</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>RpmGitRepository._sanitize_tag(<span class="py-string">&quot;0%0~0&quot;</span>)
+<span class="py-output">'0%0_0'</span></pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="pristine_tar_branch"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">pristine_tar_branch</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>The name of the pristine-tar branch, whether it already exists or 
+  not.</p>
+  <dl class="fields">
+    <dt>Decorators:</dt>
+    <dd><ul class="nomargin-top">
+        <li><code>@property</code></li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="has_pristine_tar_branch"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">has_pristine_tar_branch</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Wheter the repo has a <i>pristine-tar</i> branch.</p>
+  <dl class="fields">
+    <dt>Returns: <code>Bool</code></dt>
+        <dd><code>True</code> if the repo has pristine-tar commits already, 
+          <code>False</code> otherwise</dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="gbp-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >git-buildpackage</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Mon Nov 10 08:14:14 2014
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

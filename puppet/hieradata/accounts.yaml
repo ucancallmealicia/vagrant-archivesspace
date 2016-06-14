@@ -10,12 +10,3 @@ accounts::ssh_keys:
 accounts::users:
   archivesspace:
     #ensure: absent
-    uid: 3001
-    comment: "Arcivesspace user"
-    gid: 3001
-
-accounts::usergroups:
-
-  as:
-    -archivesspace
-

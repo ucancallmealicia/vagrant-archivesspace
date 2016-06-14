@@ -1,45 +1,61 @@
-# vagrant-archivesspace
-A vagrant installer for Archivesspace 1.4
+## vagrant-archivesspace
+Vagrant installer for archivesspace
+
+#### Table of Contents
+
+1.  [Overview] (#overview)
+2.  [Pre-installation] (#pre-installation)
+3.  [Installation] (#installation)
 
 
-# Installation
+#### Overview
 
-The installation uses librarian puppet to load puppet modules
-at build time.  You'll need ot the vagrant plugin for librarian-puppet,
-so before you begin run the following,
+Vagrant-archivesspace installs the latest version of Archivesspace.
+The Vagrantfile uses puppet and r10k to install archviesspace and mysql
+on a VM running Centos 6.7.  Puppet uses hiera for configuration data 
+and vagrant-archivesspace can be used to install any verison of 
+archivesspace for which an rpm exists.  For a complete lsit of 
+avilable options please see the installaiton instructions.
 
-> vagrant plugin install vagrant-librarian-puppet
- 
-Then you can proceed with,
 
-> $ git clone https://NYULibraries/vagrant-archviesspace
+#### Pre-installation setup
 
-> $ cd vagrant-archivesspace
+To run the vagrant installer you will need Virtualbox, vagrant, and the 
+vagrant plugin vagrant-r10k.  If you're on a Mac the easiest way to install everything you'll need is with homebrew.  The following steps will install homebrew and 
+everything you need to get vagrant running
 
-> $ vagrant up
+    $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    $ brew cask install virtualbox
+    $ brew cask install vagrant
+    $ brew cask install vagrant-manager
+    $ vagrant plugin install vagrant-r10k
+
+
+#### Installation
+
+To get Archivesspace running download the vagrant file and run 'vagrant up'.
+
+    $ git clone https://github.com/NYULibraries/vagrant-archivesspace
+    $ cd vagrant-archivesspace
+    $ vagrant up
+
+
+To connect to your vagrant box you can,
+
+    $ vagrant ssh
+
 
 Once vagrant is finished running it can take a few minutes for 
 Archivesspace to initially start up.  Point you're browser at
 http://127.0.0.1:8180 and shen archivesspace has completed its 
-startup process you connect to th frontend.
-
-
-# Dependencies
-
-To run the installer you'll need virtualbox and vagrant installed. 
-If you're running OS X and have homebrew installed it's pretty simple,
-
-
-> $ brew cask install virtualbox
-
-> $ brew cask install vagrant
+startup process you connect to thi frontend.
 
 
 # The gory details
 
-This will install Archivesspace 1.4.2 in a Virtualbox VM 
+This will install the latest version of Archivesspace in a Virtualbox VM 
 running Centos 6.7 and mysql.  The passwords for the mysql 
-"root" and "as" users have been set to "vagrant".
+"root" and "asdb" users have been set to "vagrant".
 
 The archivesspace ports have been mapped in the following way,
 
@@ -60,15 +76,5 @@ Once the VM is running you can connect to the box by running
 At this point you will be logged in as the vagrant user, which
 has passwordless sudo access.
 
-Archivesspace is installed in /usr/local/archivesspace
-
-# Note: 
-
-This project is in the very early stages adn not much testing has
-been done at this point.  It was developed on OS x 10.9 and has not
-been tested on any other operating systems.  
-
-Since vagrant produces a self containbed environment I expect it to
-work fairly consistently, but if you have any issues with the installer 
-please let me know.
+Archivesspace is installed in /opt/archivesspace
 

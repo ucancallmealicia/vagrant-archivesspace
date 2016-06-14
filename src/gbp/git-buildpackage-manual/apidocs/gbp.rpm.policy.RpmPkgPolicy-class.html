@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>gbp.rpm.policy.RpmPkgPolicy</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="gbp-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >git-buildpackage</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="gbp-module.html">Package&nbsp;gbp</a> ::
+        <a href="gbp.rpm-module.html">Package&nbsp;rpm</a> ::
+        <a href="gbp.rpm.policy-module.html">Module&nbsp;policy</a> ::
+        Class&nbsp;RpmPkgPolicy
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="gbp.rpm.policy.RpmPkgPolicy-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class RpmPkgPolicy</h1><p class="nomargin-top"></p>
+<pre class="base-tree">
+   object --+    
+            |    
+<a href="gbp.pkg.PkgPolicy-class.html">pkg.PkgPolicy</a> --+
+                |
+               <strong class="uidshort">RpmPkgPolicy</strong>
+</pre>
+
+<hr />
+<p>Packaging policy for RPM</p>
+
+<!-- ==================== NESTED CLASSES ==================== -->
+<a name="section-NestedClasses"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Nested Classes</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-NestedClasses"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="gbp.rpm.policy.RpmPkgPolicy.Changelog-class.html" class="summary-name">Changelog</a><br />
+      Container for changelog related policy settings
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="gbp.rpm.policy.RpmPkgPolicy.ChangelogEntryFormatter-class.html" class="summary-name">ChangelogEntryFormatter</a><br />
+      Helper class for generating changelog entries from git commits
+    </td>
+  </tr>
+</table>
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__delattr__</code>,
+      <code>__format__</code>,
+      <code>__getattribute__</code>,
+      <code>__hash__</code>,
+      <code>__init__</code>,
+      <code>__new__</code>,
+      <code>__reduce__</code>,
+      <code>__reduce_ex__</code>,
+      <code>__repr__</code>,
+      <code>__setattr__</code>,
+      <code>__sizeof__</code>,
+      <code>__str__</code>,
+      <code>__subclasshook__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS METHODS ==================== -->
+<a name="section-ClassMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Class Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-ClassMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>bool</code>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>RpmPkgPolicy.is_valid_orig_archive(<span class="py-string">&quot;foo/bar_baz.tar.gz&quot;</span>)
+<span class="py-output">True</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>RpmPkgPolicy.is_valid_orig_archive(<span class="py-string">&quot;foo.bar.tar&quot;</span>)
+<span class="py-output">True</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>RpmPkgPolicy.is_valid_orig_archive(<span class="py-string">&quot;foo.bar&quot;</span>)
+<span class="py-output">False</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>RpmPkgPolicy.is_valid_orig_archive(<span class="py-string">&quot;foo.gz&quot;</span>)
+<span class="py-output">False</span></pre></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.rpm.policy.RpmPkgPolicy-class.html#is_valid_orig_archive" class="summary-sig-name">is_valid_orig_archive</a>(<span class="summary-sig-arg">cls</span>,
+        <span class="summary-sig-arg">filename</span>)</span><br />
+      Is this a valid orig source archive</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>dict</code>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>RpmPkgPolicy.split_full_version(<span class="py-string">&quot;1&quot;</span>)
+<span class="py-output">{'release': None, 'epoch': None, 'upstreamversion': '1'}</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>RpmPkgPolicy.split_full_version(<span class="py-string">&quot;1.2.3-5.3&quot;</span>)
+<span class="py-output">{'release': '5.3', 'epoch': None, 'upstreamversion': '1.2.3'}</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>RpmPkgPolicy.split_full_version(<span class="py-string">&quot;3:1.2.3&quot;</span>)
+<span class="py-output">{'release': None, 'epoch': '3', 'upstreamversion': '1.2.3'}</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>RpmPkgPolicy.split_full_version(<span class="py-string">&quot;3:1-0&quot;</span>)
+<span class="py-output">{'release': '0', 'epoch': '3', 'upstreamversion': '1'}</span></pre></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.rpm.policy.RpmPkgPolicy-class.html#split_full_version" class="summary-sig-name">split_full_version</a>(<span class="summary-sig-arg">cls</span>,
+        <span class="summary-sig-arg">version</span>)</span><br />
+      Parse full version string and split it into individual &quot;version 
+      components&quot;, i.e.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>str</code>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>RpmPkgPolicy.compose_full_version({<span class="py-string">'epoch'</span>: <span class="py-string">''</span>, <span class="py-string">'upstreamversion'</span>: <span class="py-string">'1.0'</span>})
+<span class="py-output">'1.0'</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>RpmPkgPolicy.compose_full_version({<span class="py-string">'epoch'</span>: <span class="py-string">'2'</span>, <span class="py-string">'upstreamversion'</span>: <span class="py-string">'1.0'</span>, <span class="py-string">'release'</span>: None})
+<span class="py-output">'2:1.0'</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>RpmPkgPolicy.compose_full_version({<span class="py-string">'epoch'</span>: None, <span class="py-string">'upstreamversion'</span>: <span class="py-string">'1'</span>, <span class="py-string">'release'</span>: <span class="py-string">'0'</span>})
+<span class="py-output">'1-0'</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>RpmPkgPolicy.compose_full_version({<span class="py-string">'epoch'</span>: <span class="py-string">'2'</span>, <span class="py-string">'upstreamversion'</span>: <span class="py-string">'1.0'</span>, <span class="py-string">'release'</span>: <span class="py-string">'2.3'</span>})
+<span class="py-output">'2:1.0-2.3'</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>RpmPkgPolicy.compose_full_version({<span class="py-string">'epoch'</span>: <span class="py-string">'2'</span>, <span class="py-string">'upstreamversion'</span>: <span class="py-string">''</span>, <span class="py-string">'release'</span>: <span class="py-string">'2.3'</span>})</pre></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gbp.rpm.policy.RpmPkgPolicy-class.html#compose_full_version" class="summary-sig-name">compose_full_version</a>(<span class="summary-sig-arg">cls</span>,
+        <span class="summary-sig-arg">evr</span>)</span><br />
+      Compose a full version string from individual &quot;version 
+      components&quot;, i.e.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="gbp.pkg.PkgPolicy-class.html">pkg.PkgPolicy</a></code></b>:
+      <code><a href="gbp.pkg.PkgPolicy-class.html#guess_upstream_src_version">guess_upstream_src_version</a></code>,
+      <code><a href="gbp.pkg.PkgPolicy-class.html#is_valid_packagename">is_valid_packagename</a></code>,
+      <code><a href="gbp.pkg.PkgPolicy-class.html#is_valid_upstreamversion">is_valid_upstreamversion</a></code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== STATIC METHODS ==================== -->
+<a name="section-StaticMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Static Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-StaticMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="gbp.pkg.PkgPolicy-class.html">pkg.PkgPolicy</a></code></b>:
+      <code><a href="gbp.pkg.PkgPolicy-class.html#has_orig">has_orig</a></code>,
+      <code><a href="gbp.pkg.PkgPolicy-class.html#symlink_orig">symlink_orig</a></code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS VARIABLES ==================== -->
+<a name="section-ClassVariables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Class Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-ClassVariables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="python_rpmlib_module_name"></a><span class="summary-name">python_rpmlib_module_name</span> = <code title="&quot;rpm_tizen&quot;">&quot;rpm_tizen&quot;</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="alnum"></a><span class="summary-name">alnum</span> = <code title="'a-zA-Z0-9'">'a-zA-Z0-9'</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="name_whitelist_chars"></a><span class="summary-name">name_whitelist_chars</span> = <code title="'._+%{}\-'">'._+%{}\-'</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="version_whitelist_chars"></a><span class="summary-name">version_whitelist_chars</span> = <code title="'._+%{}~'">'._+%{}~'</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="gbp.rpm.policy.RpmPkgPolicy-class.html#packagename_re" class="summary-name">packagename_re</a> = <code title="re.compile(&quot;^[%s][%s%s]+$&quot; %(alnum, alnum, name_whitelist_chars))">re.compile(&quot;^[%s][%s%s]+$&quot; %(alnum, alnum, na<code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="gbp.rpm.policy.RpmPkgPolicy-class.html#packagename_msg" class="summary-name">packagename_msg</a> = <code title="&quot;Package names must be at least two characters long, &quot; &quot;start with an \
+alphanumeric and can only contain &quot; &quot;alphanumerics or characters in %s\
+&quot; % list(name_whitelist_chars)">&quot;Package names must be at least two characte<code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="gbp.rpm.policy.RpmPkgPolicy-class.html#upstreamversion_re" class="summary-name">upstreamversion_re</a> = <code title="re.compile(&quot;^[0-9][%s%s]*$&quot; %(alnum, version_whitelist_chars))">re.compile(&quot;^[0-9][%s%s]*$&quot; %(alnum, vers<code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="gbp.rpm.policy.RpmPkgPolicy-class.html#upstreamversion_msg" class="summary-name">upstreamversion_msg</a> = <code title="&quot;Upstream version numbers must start with a digit &quot; &quot;and can only cont\
+aing alphanumerics or characters &quot; &quot;in %s&quot; % list(version_whitelist_ch\
+ars)">&quot;Upstream version numbers must start wit<code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="tag_timestamp_format"></a><span class="summary-name">tag_timestamp_format</span> = <code title="&quot;%Y%m%d&quot;">&quot;%Y%m%d&quot;</code>
+    </td>
+  </tr>
+</table>
+<!-- ==================== PROPERTIES ==================== -->
+<a name="section-Properties"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Properties</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Properties"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__class__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Method Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-MethodDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="is_valid_orig_archive"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">is_valid_orig_archive</span>(<span class="sig-arg">cls</span>,
+        <span class="sig-arg">filename</span>)</span>
+    <br /><em class="fname">Class Method</em>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Is this a valid orig source archive</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>filename</code></strong> (<code>str</code>) - upstream source archive filename</li>
+    </ul></dd>
+    <dt>Returns: <code>bool</code>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>RpmPkgPolicy.is_valid_orig_archive(<span class="py-string">&quot;foo/bar_baz.tar.gz&quot;</span>)
+<span class="py-output">True</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>RpmPkgPolicy.is_valid_orig_archive(<span class="py-string">&quot;foo.bar.tar&quot;</span>)
+<span class="py-output">True</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>RpmPkgPolicy.is_valid_orig_archive(<span class="py-string">&quot;foo.bar&quot;</span>)
+<span class="py-output">False</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>RpmPkgPolicy.is_valid_orig_archive(<span class="py-string">&quot;foo.gz&quot;</span>)
+<span class="py-output">False</span></pre></dt>
+        <dd>true if valid upstream source archive filename</dd>
+    <dt>Overrides:
+        <a href="gbp.pkg.PkgPolicy-class.html#is_valid_orig_archive">pkg.PkgPolicy.is_valid_orig_archive</a>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="split_full_version"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">split_full_version</span>(<span class="sig-arg">cls</span>,
+        <span class="sig-arg">version</span>)</span>
+    <br /><em class="fname">Class Method</em>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Parse full version string and split it into individual &quot;version 
+  components&quot;, i.e. upstreamversion, epoch and release</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>version</code></strong> (<code>str</code>) - full version of a package</li>
+    </ul></dd>
+    <dt>Returns: <code>dict</code>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>RpmPkgPolicy.split_full_version(<span class="py-string">&quot;1&quot;</span>)
+<span class="py-output">{'release': None, 'epoch': None, 'upstreamversion': '1'}</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>RpmPkgPolicy.split_full_version(<span class="py-string">&quot;1.2.3-5.3&quot;</span>)
+<span class="py-output">{'release': '5.3', 'epoch': None, 'upstreamversion': '1.2.3'}</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>RpmPkgPolicy.split_full_version(<span class="py-string">&quot;3:1.2.3&quot;</span>)
+<span class="py-output">{'release': None, 'epoch': '3', 'upstreamversion': '1.2.3'}</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>RpmPkgPolicy.split_full_version(<span class="py-string">&quot;3:1-0&quot;</span>)
+<span class="py-output">{'release': '0', 'epoch': '3', 'upstreamversion': '1'}</span></pre></dt>
+        <dd>individual version components</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="compose_full_version"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">compose_full_version</span>(<span class="sig-arg">cls</span>,
+        <span class="sig-arg">evr</span>)</span>
+    <br /><em class="fname">Class Method</em>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Compose a full version string from individual &quot;version 
+  components&quot;, i.e. epoch, version and release</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>evr</code></strong> (<code>dict</code> of <code>str</code>) - dict of version components</li>
+    </ul></dd>
+    <dt>Returns: <code>str</code>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>RpmPkgPolicy.compose_full_version({<span class="py-string">'epoch'</span>: <span class="py-string">''</span>, <span class="py-string">'upstreamversion'</span>: <span class="py-string">'1.0'</span>})
+<span class="py-output">'1.0'</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>RpmPkgPolicy.compose_full_version({<span class="py-string">'epoch'</span>: <span class="py-string">'2'</span>, <span class="py-string">'upstreamversion'</span>: <span class="py-string">'1.0'</span>, <span class="py-string">'release'</span>: None})
+<span class="py-output">'2:1.0'</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>RpmPkgPolicy.compose_full_version({<span class="py-string">'epoch'</span>: None, <span class="py-string">'upstreamversion'</span>: <span class="py-string">'1'</span>, <span class="py-string">'release'</span>: <span class="py-string">'0'</span>})
+<span class="py-output">'1-0'</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>RpmPkgPolicy.compose_full_version({<span class="py-string">'epoch'</span>: <span class="py-string">'2'</span>, <span class="py-string">'upstreamversion'</span>: <span class="py-string">'1.0'</span>, <span class="py-string">'release'</span>: <span class="py-string">'2.3'</span>})
+<span class="py-output">'2:1.0-2.3'</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>RpmPkgPolicy.compose_full_version({<span class="py-string">'epoch'</span>: <span class="py-string">'2'</span>, <span class="py-string">'upstreamversion'</span>: <span class="py-string">''</span>, <span class="py-string">'release'</span>: <span class="py-string">'2.3'</span>})</pre></dt>
+        <dd>full version</dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== CLASS VARIABLE DETAILS ==================== -->
+<a name="section-ClassVariableDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Class Variable Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-ClassVariableDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="packagename_re"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">packagename_re</h3>
+  
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+re.compile(&quot;^[%s][%s%s]+$&quot; %(alnum, alnum, name_whitelist_chars))
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="packagename_msg"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">packagename_msg</h3>
+  
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+&quot;Package names must be at least two characters long, &quot; &quot;start with an <span class="variable-linewrap"><img src="crarr.png" alt="\" /></span>
+alphanumeric and can only contain &quot; &quot;alphanumerics or characters in %s<span class="variable-linewrap"><img src="crarr.png" alt="\" /></span>
+&quot; % list(name_whitelist_chars)
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="upstreamversion_re"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">upstreamversion_re</h3>
+  
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+re.compile(&quot;^[0-9][%s%s]*$&quot; %(alnum, version_whitelist_chars))
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="upstreamversion_msg"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">upstreamversion_msg</h3>
+  
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+&quot;Upstream version numbers must start with a digit &quot; &quot;and can only cont<span class="variable-linewrap"><img src="crarr.png" alt="\" /></span>
+aing alphanumerics or characters &quot; &quot;in %s&quot; % list(version_whitelist_ch<span class="variable-linewrap"><img src="crarr.png" alt="\" /></span>
+ars)
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="gbp-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >git-buildpackage</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Mon Nov 10 08:14:14 2014
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>
