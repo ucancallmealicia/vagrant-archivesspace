@@ -15,9 +15,9 @@ Vagrant.configure(2) do |config|
     #vb.memory = "2048"
   end
   #config.vm.network "private_network", type: "dhcp",
-  config.vm.network "private_network", ip: "192.168.80.80",
+  config.vm.network "private_network", ip: "192.168.90.80",
       virtualbox__hostonly: true
-  config.vm.network "forwarded_port", guest:  8080, host: 8180,
+  config.vm.network "forwarded_port", guest:  8080, host: 9080,
     auto_correct: true
   config.vm.hostname = HOST_NAME + ".local"
   #config.vm.synced_folder "./", "/vagrant", disabled: true

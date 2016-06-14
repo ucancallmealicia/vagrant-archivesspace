@@ -1,5 +1,5 @@
 node default {
 
-  include roles
+  include roles::archivesspace
 
 }
