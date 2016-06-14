@@ -19,6 +19,12 @@ Vagrant.configure(2) do |config|
       virtualbox__hostonly: true
   config.vm.network "forwarded_port", guest:  8080, host: 9080,
     auto_correct: true
+  config.vm.network "forwarded_port", guest:  8081, host: 9081,
+    auto_correct: true
+  config.vm.network "forwarded_port", guest:  8089, host: 9089,
+    auto_correct: true
+  config.vm.network "forwarded_port", guest:  8090, host: 9090,
+    auto_correct: true
   config.vm.hostname = HOST_NAME + ".local"
   #config.vm.synced_folder "./", "/vagrant", disabled: true
   #config.vm.synced_folder "./", "/vagrant-" + HOST_NAME, id: "vagrant-" + HOST_NAME
