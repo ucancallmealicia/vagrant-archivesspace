@@ -52,12 +52,12 @@ class profiles::base {
         compressext     => '.bz2',
       }
     }
-    logrotate::conf { '/etc/logrotate.conf':
-      rotate       => 4,
-      rotate_every => 'week',
-      ifempty      => true,
-      compress     => true,
-    }
+    #logrotate::conf { '/etc/logrotate.conf':
+    #  rotate       => 4,
+    #  rotate_every => 'week',
+    #  ifempty      => true,
+    #  compress     => true,
+    #}
     logrotate::rule { 'messages':
       compress     => true,
       compresscmd  => '/usr/bin/bzip2',
