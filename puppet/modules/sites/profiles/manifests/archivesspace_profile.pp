@@ -14,7 +14,10 @@ class profiles::archivesspace_profile (
 
 
   include dltsyumrepo::development
-  include java
+  #include java
+  class { 'java':
+    package => 'java-1.8.0-openjdk',
+  }
   include archivesspace
   archivesspace::plugin { 'nyu_marcxml_export_plugin' :
     ensure        => 'present',
