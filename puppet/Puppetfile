@@ -1,6 +1,8 @@
 #!/usr/bin/env ruby
 #^syntax detection
 
+moduledir "modules/thirdparty"
+
 forge "https://forgeapi.puppetlabs.com"
 
 # Modules from github
