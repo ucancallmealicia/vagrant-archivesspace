@@ -23,7 +23,7 @@ class profiles::archivesspace_profile (
     plugin_conf   => 'AppConfig[:plugins] = [\'nyu_marcxml_export_plugin\']'
   }
   firewall { '100 allow http and https access':
-      dport   => [8080, 8089, 8090, 8091 ],
+      dport   => [80,8080, 8089, 8090, 8091 ],
       proto   => tcp,
       action  => accept,
   }
