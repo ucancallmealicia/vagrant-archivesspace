@@ -15,7 +15,7 @@ Vagrant.configure(2) do |config|
     #vb.memory = "2048"
   end
   #config.vm.network "private_network", type: "dhcp",
-  config.vm.network "private_network", ip: "192.168.90.80",
+  config.vm.network "private_network", ip: "192.168.50.39",
       virtualbox__hostonly: true
   config.vm.network "forwarded_port", guest:  8080, host: 9080,
     auto_correct: true

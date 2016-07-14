@@ -43,11 +43,30 @@ class profiles::base {
     class { 'localtime':
         zone => "America/New_York",
     }
+    class { '::logrotate' :
+      ensure            => 'latest',
+      config            => {
+        compress        => true,
+        compresscmd     => '/usr/bin/bzip2',
+        compressoptions => '-9',
+        compressext     => '.bz2',
+      }
+    }
+    #logrotate::conf { '/etc/logrotate.conf':
+    #  rotate       => 4,
+    #  rotate_every => 'week',
+    #  ifempty      => true,
+    #  compress     => true,
+    #}
     logrotate::rule { 'messages':
-        path         => '/var/log/messages',
-        rotate       => 5,
-        rotate_every => 'week',
-        postrotate   => '/usr/bin/killall -HUP syslogd'
+      compress     => true,
+      compresscmd  => '/usr/bin/bzip2',
+      compressext  => '.bz2',
+      path         => '/var/log/messages',
+      rotate       => 4,
+      rotate_every => 'daily',
+      #postrotate  => '/usr/bin/killall -HUP syslogd'
+      postrotate   => '/sbin/service rsyslog restart 2> /dev/null',
     }
     include manpages
     include motd

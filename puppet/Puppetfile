@@ -45,8 +45,8 @@ mod 'puppetlabs/java',
 mod 'jlbfalcao/jruby',
     :git => 'git://github.com/intelie/puppet-jruby'
 
-mod 'rodjek/logrotate',
-    :git => 'git://github.com/rodjek/puppet-logrotate'
+mod 'yo61/logrotate',
+    :git => 'git://github.com/yo61/puppet-logrotate'
 
 mod 'puppetlabs/mysql',
     :git => 'git://github.com/puppetlabs/puppetlabs-mysql'
