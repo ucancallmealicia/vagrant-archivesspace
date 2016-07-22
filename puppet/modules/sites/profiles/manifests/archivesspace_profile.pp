@@ -14,6 +14,7 @@ class profiles::archivesspace_profile (
 
 
   include dltsyumrepo::development
+  #include dltsyumrepo::dlts
   #include java
   class { 'java':
     package => 'java-1.8.0-openjdk',
