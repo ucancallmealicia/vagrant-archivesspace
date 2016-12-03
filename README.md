@@ -30,6 +30,7 @@ everything you need to get vagrant running
     $ brew cask install vagrant
     $ brew cask install vagrant-manager
     $ vagrant plugin install vagrant-r10k
+    $ vagrant plugin install vagrant-vbguest
 
 
 #### Installation
@@ -71,8 +72,8 @@ The archivesspace ports have been mapped in the following way,
 > indexer    8091 => 127.0.0.1:9191
 
 Also, the VM has two NICs, the second of which is a "host only adapter"
-with an ip address of 192.168.90.80.  To connect locally archivesspace 
-from your workstation go to http://192.168.90.80:8080.
+with an ip address of 192.168.50.39.  To connect locally archivesspace 
+from your workstation go to http://192.168.50.39:8080.
 
 Once the VM is running you can connect to the box by running
 
@@ -89,7 +90,7 @@ puppet/hieradata/common.yaml and change the value of
 archivesspace::version: 'latest'
 to the version of archivesspace that you want to install.
 
-To find a list of available versions ayou can do the following,
+To find a list of available versions a you can do the following,
 
     $ vagrant ssh
     $ yum --showduplicates list archivesspace
