@@ -118,7 +118,8 @@ mod 'aco/yum_autoupdate',
 
 mod 'flannon/archivesspace',
     :git => 'git://github.com/flannon/puppet-archivesspace.git',
-    :ref => '0.1.4'
+    :ref => 'dev-1.5.2'
+    #:ref => '0.1.4'
     #:ref => 'master'
 
 mod 'flannon/archivesspace_dev',
