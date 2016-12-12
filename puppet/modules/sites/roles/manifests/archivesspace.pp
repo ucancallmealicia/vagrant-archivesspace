@@ -13,5 +13,6 @@
 #
 class roles::archivesspace {
   include profiles::base
-  include profiles::archivesspace_profile
+  #include profiles::archivesspace_profile
+  include profiles::webapp_archivesspace
 }

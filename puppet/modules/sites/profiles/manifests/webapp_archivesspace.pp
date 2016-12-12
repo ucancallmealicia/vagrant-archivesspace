@@ -20,12 +20,12 @@ class profiles::archivesspace_profile (
     package => 'java-1.8.0-openjdk',
   }
   include archivesspace
-  archivesspace::plugin { 'nyu_marcxml_export_plugin' :
-    ensure        => 'present',
-    plugin        => 'nyu_marcxml_export_plugin',
-    plugin_source => 'https://github.com/NYULibraries/nyu_marcxml_export_plugin.git',
-    plugin_conf   => 'AppConfig[:plugins] = [\'nyu_marcxml_export_plugin\']'
-  }
+  #archivesspace::plugin { 'nyu_marcxml_export_plugin' :
+  #  ensure        => 'present',
+  #  plugin        => 'nyu_marcxml_export_plugin',
+  #  plugin_source => 'https://github.com/NYULibraries/nyu_marcxml_export_plugin.git',
+  #  plugin_conf   => 'AppConfig[:plugins] = [\'nyu_marcxml_export_plugin\']'
+  #}
   firewall { '100 allow http and https access':
       dport   => [80,8080, 8089, 8090, 8091 ],
       proto   => tcp,
