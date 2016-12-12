@@ -1,5 +1,5 @@
 #
-class profiles::archivesspace_profile (
+class profiles::webapp_archivesspace (
   $db          = hiera('archivesspace::db',
       $archivesspace::params::db),
   $db_passwd   = hiera('archivesspace::db_passwd',
