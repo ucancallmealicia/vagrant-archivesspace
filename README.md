@@ -49,8 +49,8 @@ To connect to your vagrant box you can,
 
 Once vagrant is finished running it can take a few minutes for 
 Archivesspace to initially start up.  Point you're browser at
-http://127.0.0.1:8180 and shen archivesspace has completed its 
-startup process you connect to thi frontend.
+http://localhost:9080 and when archivesspace has completed its 
+startup process you connect to the frontend.
 
 
 ### Usage
@@ -61,15 +61,15 @@ mysql "root" and "asdb" users have been set to "vagrant".
 
 The archivesspace ports have been mapped in the following way,
 
-> frontend   8080 => 127.0.0.1:9180
+> frontend   8080 => localhost:9080
 
-> public     8081 => 127.0.0.1:9181
+> public     8081 => localhost:9081
 
-> backend    8089 => 127.0.0.1:9189
+> backend    8089 => localhost:9089
 
-> solr       8090 => 127.0.0.1:9190
+> solr       8090 => localhost:9090
 
-> indexer    8091 => 127.0.0.1:9191
+> indexer    8091 => localhost:9091
 
 Also, the VM has two NICs, the second of which is a "host only adapter"
 with an ip address of 192.168.50.39.  To connect locally archivesspace 
