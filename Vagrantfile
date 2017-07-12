@@ -9,7 +9,9 @@ Vagrant.configure(2) do |config|
   config.ssh.insert_key = false
   # Use your id_rsa key from !/.ssh
   config.ssh.private_key_path = [ '~/.vagrant.d/insecure_private_key', '~/.ssh/id_rsa' ]
-  config.vm.box = "NYULibraries/archivesspace_1.5.2"
+  # Archivesspace available versions
+  #config.vm.box = "NYULibraries/archivesspace_1.5.2"
+  config.vm.box = "NYULibraries/archivesspace_2.0.0"
   config.vm.provider "virtualbox" do |vb|
     #vb.gui = true
     #vb.memory = "2048"

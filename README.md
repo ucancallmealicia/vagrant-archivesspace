@@ -6,6 +6,7 @@ Vagrant installer for archivesspace
 1.  [Overview] (#overview)
 3.  [Installation] (#installation)
 5.  [Usage] (#usage)
+5.  [Versions] (#versions)
 
 
 #### Overview
@@ -22,18 +23,20 @@ To get Archivesspace running download the vagrant file and run 'vagrant up'.
     $ vagrant up
 
 
-To connect to your vagrant box you can,
-
-    $ vagrant ssh
-
-
-Once vagrant is finished running you can point your browser at
-http://localhost:8080 to connect to archivesspace
-
 ### Usage
 
 Vagrant-archivesspace will install the latest version of Archivesspace 
 on a Virtualbox VM running Centos 7 and mysql.  
+
+To connect to your vagrant box you can,
+
+    $ vagrant ssh
+
+ To connect to the front end pint your browser at 
+
+    http://localhost:8080 
+
+ Archivesspace has the default username and password, admin/admin
 
 The archivesspace ports have been mapped in the following way,
 
@@ -47,21 +50,15 @@ The archivesspace ports have been mapped in the following way,
 
 > indexer    8091 => localhost:8091
 
-Also, the VM has two NICs, the second of which is a "host only adapter"
-with an ip address of 192.168.50.39.  To connect locally archivesspace 
-from your workstation go to http://192.168.50.39:8080.
-
-Once the VM is running you can connect to the box by running
-
-> $ vagrant ssh
-
-At this point you will be logged in as the vagrant user, which
-has passwordless sudo access.
 
 Archivesspace is installed in /opt/archivesspace.  
 
-Archivesspace uses the follwoign myswl setting,
+Archivesspace uses the following  mysql settings,
 
   user:     asdb
   password: password
 
+
+#### Versions
+
+Currently vagrant-archivessapce runs archivesspace v2.0.0.  Other available versions are listed in the Vagrantfile.  To load another version uncomment the version you would like to run and run vagrant up.
